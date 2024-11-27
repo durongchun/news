@@ -146,7 +146,7 @@ footer {
     /* Right side style */
     .right-side {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1.3fr 3fr;
     }
 
     /* -------------Lucy-----------*/
@@ -158,9 +158,21 @@ footer {
 
     }
 
+    .bottom-articles article {
+        display: grid;
+        grid-template-rows: 2fr, 1.5;
+
+    }
+
+    .bottom-articles article text {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
     .read-bar {
         display: flex;
         gap: 0.5rem;
+        margin-top: 2rem;
 
     }
 
