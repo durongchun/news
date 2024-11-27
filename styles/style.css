@@ -33,10 +33,18 @@ header {
   background-color: yellow;
 }
 
+.main-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: lightblue;
+}
+
+
 footer {
   height: 100px;
   background-color: bisque;
 }
+
 @media (min-width: 768px) {
 }
 @media (min-width: 1024px) {
