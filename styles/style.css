@@ -2,41 +2,112 @@
 
 /* Simple CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
+/* Nav bar style */
+header {
+  height: 100px;
+  width: 100%;
+  background-color: bisque;
+}
 
-@media (min-width: 768px) {}
+/* Main wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
+.news-name {
+  text-align: center;
+  height: 100px;
+  background-color: yellow;
+}
+
+footer {
+  height: 100px;
+  background-color: bisque;
+}
+@media (min-width: 768px) {
+}
 @media (min-width: 1024px) {
-    body {
-        display: flex;
-        flex-direction: column;
-    }
+  .container {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  /* List style */
+  .left-list {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    padding: 5px;
+  }
+  .left-list > article {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    height: 160px;
+    margin: 5px;
+  }
+  img {
+    width: 30%;
+    object-fit: cover;
+  }
+  .news-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5px;
+    justify-content: space-between;
+  }
 
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-    }
+  h2 {
+    font-size: 20px;
+  }
 
-    .left-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+  .excerpt,
+  .category {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .tag {
+    display: flex;
+    flex-direction: row;
+  }
+  a {
+    color: black;
+    padding-right: 30px;
+  }
+  .content,
+  .excerpt,
+  .date {
+    display: none;
+  }
+  /* List style ends here */
 
-    }
+  /* Right side style */
+  .right-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
 
-    .right-article {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-    }
-
-    article {
-        display: flex;
-
-    }
+  .bottom-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: purple;
+  }
 }
+
