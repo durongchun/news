@@ -1,8 +1,15 @@
 const mainContent = document.querySelector(".container");
 const readMores = document.querySelectorAll(".readMore");
+const pageNavs = document.querySelectorAll(".page-nav");
 const details = document.querySelectorAll(".detail");
 const detailEnvor = details[0];
 const detailScien = details[1];
+
+pageNavs.forEach((navItem) => {
+  navItem.addEventListener("clcik", function () {
+    this.classList.toggle("active");
+  });
+});
 
 for (let i = 0; i < readMores.length; i++) {
   readMores[i].addEventListener("click", function () {
@@ -11,8 +18,6 @@ for (let i = 0; i < readMores.length; i++) {
 
     // Add 'fading' class to slide up and fade the container
     mainContent.classList.add("fading");
-
-    window.scrollTo(0, 0);
 
     // Optionally, hide completely after the slide and fade
     setTimeout(() => {
