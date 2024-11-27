@@ -2,112 +2,282 @@
 
 /* Simple CSS Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  padding: 10px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    font-family: GeoEditMedium, Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Helvetica, Arial, sans-serif;
 }
+
+img {
+    width: 100%;
+    border: 0;
+
+}
+
+---------Siyuan--------------
 
 /* Nav bar style */
 header {
-  height: 100px;
-  width: 100%;
-  background-color: bisque;
+    height: 100px;
+    width: 100%;
+    background-color: bisque;
 }
 
 /* Main wrapper */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
+/* .wrapper {
+    display: flex;
+    flex-direction: column;
+} */
 
-.news-name {
-  text-align: center;
-  height: 100px;
-  background-color: yellow;
-}
+/* .news-name {
+    text-align: center;
+    height: 100px;
+    background-color: yellow;
+} */
 
 footer {
-  height: 100px;
-  background-color: bisque;
+    height: 100px;
+    background-color: bisque;
 }
-@media (min-width: 768px) {
-}
-@media (min-width: 1024px) {
-  .container {
+
+/* -------Lucy--------------- */
+
+.bottom-articles {
     display: grid;
-    grid-template-columns: 1.5fr 3fr;
-    padding: 0;
-    margin: 0;
+    grid-template-rows: repeat(2, 1fr);
+
+    /* height: 2rem; */
+    position: relative;
+
+}
+
+.bottom-articles article img {
     width: 100%;
-  }
-  /* List style */
-  .left-list {
-    display: flex;
-    flex-direction: column;
-  }
-  h1 {
-    padding: 5px;
-  }
-  .left-list > article {
-    display: flex;
-    flex-direction: row;
-    background-color: lightgray;
-    height: 160px;
-    margin: 5px;
-  }
-  img {
-    width: 30%;
+    height: 50%;
     object-fit: cover;
-  }
-  .news-detail {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-left: 5px;
-    justify-content: space-between;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .excerpt,
-  .category {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .tag {
-    display: flex;
-    flex-direction: row;
-  }
-  a {
-    color: black;
-    padding-right: 30px;
-  }
-  .content,
-  .excerpt,
-  .date {
-    display: none;
-  }
-  /* List style ends here */
-
-  /* Right side style */
-  .right-side {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .bottom-articles {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: purple;
-  }
 }
 
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+    }
+
+    /* .container {
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    } */
+
+    /* List style */
+    .left-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        padding: 5px;
+    }
+
+    .left-list>article {
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+        height: 160px;
+        margin: 5px;
+    }
+
+    .left-list img {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .news-detail {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 5px;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .excerpt,
+    .category {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .tag {
+        display: flex;
+        flex-direction: row;
+    }
+
+    a {
+        color: black;
+        padding-right: 30px;
+    }
+
+    .content,
+    .excerpt,
+    .date {
+        display: none;
+    }
+
+    /* List style ends here */
+
+    /* Right side style */
+    .right-side {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* -------------Lucy-----------*/
+    .bottom-articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+
+    }
+
+    .read-bar {
+        display: flex;
+        gap: 0.5rem;
+
+    }
+
+    .readMore {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        border: 0;
+        position: relative;
+        cursor: pointer;
+        /* indicate it's clickable */
+    }
+
+    .bar {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        transition: all 0.3s ease-in-out;
+        /* Add transition for smooth animation */
+    }
+
+    /* When 'readMore' has the 'active' class */
+    .readMore.active .bar:nth-child(1) {
+        transform: rotate(45deg);
+        position: absolute;
+    }
+
+    .readMore.active .bar:nth-child(2),
+    .readMore.active .bar:nth-child(3) {
+        opacity: 0;
+        /* Hide the middle bar */
+    }
+
+    .readMore.active .bar:nth-child(4) {
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+
+    /* Transition for the bars when no active state */
+    .readMore .bar {
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .excerpt {
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: .1px;
+        line-height: 1.273;
+    }
+
+    .category,
+    .read-bar {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        line-height: 1.5;
+    }
+
+    .bottom-articles article img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .detail {
+        display: grid;
+        grid-template-rows: 1fr 10fr;
+        width: 80%;
+        align-items: end;
+        padding-left: 20%;
+
+    }
+
+    .description {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
+        /* width: 80%;
+        padding: 5rem;
+        padding-left: 20%; */
+        gap: 3rem;
+    }
+
+    .description img {
+        object-fit: cover;
+
+
+    }
+
+    .other-image {
+        width: 50%;
+        height: 25rem;
+    }
+
+    /* Initially, the container is fully visible and positioned normally */
+    .container {
+        opacity: 1;
+        transform: translateY(0);
+        /* Starts at normal position */
+        transition: opacity 4s ease, transform 2s ease;
+        /* Animate both opacity and sliding */
+    }
+
+    /* When we want to slide it up and fade it out */
+    .container.fading {
+        opacity: 0;
+        /* Fully fade out */
+        transform: translateY(-600px);
+        /* Slide up by 50px, adjust this value as needed */
+    }
+
+    .page-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+}
