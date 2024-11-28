@@ -1,15 +1,10 @@
 const mainContent = document.querySelector(".container");
 const readMores = document.querySelectorAll(".readMore");
-const pageNavs = document.querySelectorAll(".page-nav");
+const pageNavEnvir = document.querySelector("#enviroment");
+const pageNavScien = document.querySelector("#science");
 const details = document.querySelectorAll(".detail");
 const detailEnvor = details[0];
 const detailScien = details[1];
-
-pageNavs.forEach((navItem) => {
-  navItem.addEventListener("clcik", function () {
-    this.classList.toggle("active");
-  });
-});
 
 for (let i = 0; i < readMores.length; i++) {
   readMores[i].addEventListener("click", function () {
@@ -19,6 +14,8 @@ for (let i = 0; i < readMores.length; i++) {
     // Add 'fading' class to slide up and fade the container
     mainContent.classList.add("fading");
 
+    // Smoothly scroll to the top
+    window.scrollTo({ top: 0, behavior: "smooth" });
     // Optionally, hide completely after the slide and fade
     setTimeout(() => {
       mainContent.classList.add("d-none"); // Fully hide after animation
@@ -30,10 +27,9 @@ for (let i = 0; i < readMores.length; i++) {
       console.log("xxx 0");
 
       if (this.classList.contains("active")) {
-        detailEnvor.classList.remove("d-none");
-        // Ensure the other section is hidden
         readMores[i + 1]?.classList.remove("active"); // Safely access next button
         detailScien.classList.add("d-none");
+        detailEnvor.classList.remove("d-none");
       } else {
         detailEnvor.classList.add("d-none");
       }
@@ -52,3 +48,27 @@ for (let i = 0; i < readMores.length; i++) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  pageNavEnvir.addEventListener("click", function () {
+    console.log("page nav");
+    mainContent.classList.remove("d-none");
+    detailEnvor.classList.add("d-none");
+
+    // Refresh the page after the action
+    setTimeout(function () {
+      location.reload();
+    }, 10); // Adjust delay as needed (optional)
+  });
+
+  pageNavScien.addEventListener("click", function () {
+    console.log("page nav");
+    mainContent.classList.remove("d-none");
+    detailEnvor.classList.add("d-none");
+
+    // Refresh the page after the action
+    setTimeout(function () {
+      location.reload();
+    }, 100); // Adjust delay as needed (optional)
+  });
+});
