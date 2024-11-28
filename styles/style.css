@@ -10,6 +10,7 @@
 body {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   font-family: GeoEditMedium, Franklin Gothic Medium, Franklin Gothic,
     ITC Franklin Gothic, Helvetica, Arial, sans-serif;
 }
@@ -178,10 +179,10 @@ h2 {
 }
 
 /* Footer */
-footer {
+/* footer {
   height: 100px;
   background-color: bisque;
-}
+} */
 
 /* -------Lucy--------------- */
 
@@ -298,6 +299,72 @@ footer {
     flex-direction: row;
     gap: 1rem;
     padding-bottom: 0.5rem;
+  }
+
+  .category-main {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0;
+  }
+
+  .author-main {
+    color: rgb(250, 208, 72);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+
+  footer p {
+    color: rgb(188, 184, 184);
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    border-top: 1px solid rgb(141, 141, 141);
+  }
+
+  .footer__title,
+  .footer__person-name {
+    color: #f0ad4e;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background-color: rgb(60, 60, 60);
+  }
+
+  .copyright-text {
+    color: rgb(223, 221, 221);
+    padding-right: 0.2rem;
+  }
+
+  .footer-logo {
+    padding: 0;
+    margin-top: 1rem;
+    width: 50px;
   }
 
   /* -------------Lucy-----------*/
