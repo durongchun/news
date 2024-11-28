@@ -7,11 +7,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --text-color: #f0ad4e;
+    --font-family: GeoEditMedium, Franklin Gothic Medium, Franklin Gothic,
+        ITC Franklin Gothic, Helvetica, Arial, sans-serif;
+    --font-size-large: 20px;
+    --font-size-medium: 18px;
+    --font-size-small: 10px;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    font-family: GeoEditMedium, Franklin Gothic Medium, Franklin Gothic,
-        ITC Franklin Gothic, Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
 }
 
 .wrapper {
@@ -232,8 +242,8 @@ footer {
 
     #nav-bar li a {
         display: block;
-        color: black;
-        background-color: white;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
         text-align: center;
         font-size: 18px;
         font-weight: bold;
@@ -418,10 +428,13 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         flex-wrap: wrap;
-        /* width: 80%;
-    padding: 5rem;
-    padding-left: 20%; */
         gap: 3rem;
+    }
+
+    .description-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .description img {
