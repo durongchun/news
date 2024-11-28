@@ -17,6 +17,7 @@ body {
 
 .wrapper {
     background-color: black;
+    padding-bottom: 3rem;
 }
 
 img {
@@ -146,7 +147,7 @@ footer {
     /* Right side style */
     .right-side {
         display: grid;
-        grid-template-rows: 1fr 1.05fr;
+        grid-template-rows: 1.09fr 1fr;
         gap: 1rem;
     }
 
