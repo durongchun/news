@@ -1,676 +1,781 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-</head>
-
-<body>
-  <header>
-    <!-- Top greeting -->
-    <div class="header-top">
-      <p>
-        Welcome to Eddy news! Dive into the latest updates, insightful
-        articles, and breaking news from around the world!
-      </p>
-    </div>
-
-    <!-- Bottom nav bar -->
-    <nav id="nav-bar">
-      <img src="./images/Logo.png" alt="Eddy news logo" id="logo" />
-      <button class="btn-menu" id="btn-menu">Menu</button>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Newsletters</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sign in</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="wrapper">
-    <!-- Banner -->
-    <div class="news-name text-white align-items-center justify-content-center" style="height: 150px; width: 100%">
-      <h1>Eddy News</h1>
-      <p class="text-warning h5">"Where Stories Flow Like the River"</p>
-    </div>
-
-    <!-- Main section -->
-    <div class="container">
-      <!-- Left side of the main: List of news -->
-      <div class="left-list">
-        <h1 id="list-title">Today's Pick</h1>
-        <!-- 1st article -->
-        <article>
-          <img src="./images/History & Culture.jpeg" alt="History & Culture of Christmas" />
-          <div class="news-detail">
-            <div>
-              <div class="category"><span>HISTORY & CULTURE</span></div>
-              <h2>Advent: The Tradition of Counting Down to Christmas</h2>
-              <p class="excerpt">
-                Advent, derived from the Latin word for "arrival," is a
-                Christian tradition marking the days leading to Christmas.
-              </p>
-              <p class="content">
-                Advent, observed by Christians around the world, is a special
-                time of anticipation and preparation for Christmas. The word
-                "Advent" comes from the Latin term adventus, meaning
-                "arrival," symbolizing the coming of Jesus Christ into the
-                world. Spanning the four Sundays before Christmas, Advent is a
-                period of spiritual reflection and joyful expectation. One of
-                the most iconic Advent traditions is the use of Advent
-                calendars, often filled with treats or small surprises for
-                each day leading to December 25. This custom began in
-                19th-century Germany, where families marked the days with
-                chalk or candles. Over time, it evolved into the delightful
-                calendars we know today, featuring chocolates, toys, or even
-                themed surprises that add a festive flair to the countdown.
-                Churches around the world mark Advent with special ceremonies.
-                For example, Salisbury Cathedral in Britain hosts a moving
-                candle-lit service called "From Darkness to Light." This
-                annual procession, held at the beginning of Advent, symbolizes
-                the journey from despair to hope, celebrating the coming of
-                light into the world with the birth of Jesus. While the
-                holiday has deep religious roots, Advent has also been
-                embraced as a cultural tradition, bringing people together to
-                reflect on themes of hope, love, joy, and peace. Whether
-                through spiritual practices or the simple joy of opening a
-                tiny door on a calendar, Advent invites us all to pause and
-                savor the anticipation of Christmas.
-              </p>
-            </div>
-            <div class="news-footer">
-              <div class="author">By Erin Blakemore</div>
-              <div class="date">November 22, 2024</div>
-              <div class="tag">
-                <a href="#" class="bi bi-facebook"></a>
-                <a href="#" class="bi bi-instagram"></a>
-                <a href="#" class="bi bi-twitter"></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 2nd article -->
-        <article>
-          <img src="./images/Environment.jpeg" alt="Environment of India" />
-          <div class="news-detail">
-            <div>
-              <div class="category"><span>ENVIRONMENT</span></div>
-              <h2>
-                The 2004 Indian Ocean Tsunami: A Disaster That Caught the
-                World Unprepared
-              </h2>
-              <p class="excerpt">
-                A massive Indian Ocean earthquake triggered a tsunami,
-                equivalent to 23,000 atomic bombs, devastating coastal areas
-                and claiming over 230,000 lives.
-              </p>
-              <p class="content">
-                On December 26, 2004, a powerful 9.1-magnitude earthquake
-                struck beneath the Indian Ocean near the coast of Sumatra,
-                Indonesia. The quake released energy equivalent to 23,000
-                Hiroshima-type atomic bombs, triggering a catastrophic tsunami
-                that became one of the deadliest natural disasters in recorded
-                history. With waves towering as high as 100 feet, the tsunami
-                struck 14 countries across Asia and Africa, leaving
-                destruction and heartbreak in its wake. Caught unprepared,
-                over 230,000 people lost their lives, and millions more were
-                displaced. Coastal communities were particularly vulnerable,
-                with little to no warning systems in place. In the fishing
-                village of Nagapattinam, India, residents like the woman in
-                the iconic photograph—reaching toward the sky in anguish—were
-                left to grapple with unimaginable loss as entire families were
-                swept away. The disaster exposed a global gap in tsunami
-                awareness and preparedness. In the aftermath, international
-                efforts led to the establishment of the Indian Ocean Tsunami
-                Warning System, a network of seismic sensors and communication
-                technologies designed to provide early alerts. Educational
-                programs also emerged to teach communities about tsunami risks
-                and evacuation protocols. Twenty years later, the 2004 tsunami
-                remains a sobering reminder of nature's devastating power and
-                the importance of preparedness. While significant strides have
-                been made to improve early-warning systems, the memories of
-                that tragic day continue to inspire global efforts to build
-                resilience and save lives in the face of future disasters.
-              </p>
-            </div>
-
-            <div class="news-footer">
-              <div class="author">By Parissa DJangi</div>
-              <div class="date">November 10, 2024</div>
-              <div class="tag">
-                <a href="#" class="bi bi-facebook"></a>
-                <a href="#" class="bi bi-instagram"></a>
-                <a href="#" class="bi bi-twitter"></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 3rd article -->
-        <article>
-          <img src="./images/Lifestyle.jpeg" alt="Lifestyle of Winter essentials" />
-          <div class="news-detail">
-            <div>
-              <div><span class="category">LIFESTYLE</span></div>
-              <h2>
-                Gear Up for the Cold: Winter Essentials Inspired by Antarctica
-              </h2>
-              <p class="excerpt">
-                From weatherproof jackets to merino wool layers, these winter
-                essentials helped a writer brave Antarctica's icy extremes.
-                Here's how to stay warm and prepared for any cold-weather
-                adventure.
-              </p>
-              <p class="content">
-                Surviving Antarctica's unforgiving cold requires serious
-                preparation, and our writer Kristen Pope was up to the
-                challenge. Equipped with a carefully curated wardrobe of
-                winter essentials, she embarked on a polar adventure that put
-                every piece of gear to the ultimate test.The cornerstone of
-                her Antarctic wardrobe was layering—starting with merino wool
-                base layers for insulation and moisture-wicking properties.
-                Mid-layers such as fleece jackets provided additional warmth
-                while outerwear like weatherproof jackets and pants ensured
-                protection against icy winds and snow.Waterproof gloves and
-                insulated boots were non-negotiable. These items kept her
-                hands and feet dry and warm during excursions on icy terrain
-                and inflatable Zodiac boat rides. A thermal hat and a neck
-                gaiter rounded out her accessories shielding her from the
-                biting cold.Merino Wool Everything From socks to thermal tops
-                this natural fiber excelled at regulating body temperature
-                Weatherproof Jackets Durable wind-resistant and waterproof
-                these were critical for battling harsh Antarctic conditions
-                Waterproof Gloves Essential for handling gear and staying
-                comfortable during long days outdoors Beyond warmth and
-                protection Pope's gear provided comfort enabling her to fully
-                immerse herself in the experience. From marveling at Gentoo
-                penguins to exploring alpine landscapes her cold-weather
-                wardrobe proved indispensable Whether you're planning an
-                Antarctic expedition or just gearing up for a chilly winter
-                these essentials offer tried-and-true protection against the
-                cold. With the right gear even the most extreme weather
-                becomes a gateway to adventure.
-              </p>
-            </div>
-            <div class="news-footer">
-              <div class="author">By Kristen Pope</div>
-              <div class="date">November 21, 2024</div>
-              <div class="tag">
-                <a href="#" class="bi bi-facebook"></a>
-                <a href="#" class="bi bi-instagram"></a>
-                <a href="#" class="bi bi-twitter"></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 4th article -->
-        <article>
-          <img src="./images/Animal.jpeg" alt="Animal of Manatee" />
-          <div class="news-detail">
-            <div>
-              <div class="category"><span>ANIMAL</span></div>
-              <h2>Florida's Manatee Boom: A Story of Growth and Peril</h2>
-              <p class="excerpt">
-                Manatees are thriving in Florida like never before, drawn by
-                warm waters and human development. However, the same changes
-                that attract them now pose serious threats to their survival.
-              </p>
-              <p class="content">
-                Florida's waters are home to more manatees than ever, a
-                remarkable rise for the beloved "sea cows." These gentle
-                giants have been drawn to the Sunshine State by its warm
-                climate and the human-made changes that provide ideal
-                habitats, such as canals and power plant outflows that release
-                warm water. However, the very factors contributing to their
-                population boom may also jeopardize their future. Urban
-                development and increased boat traffic create hazards for
-                manatees, including fatal collisions and habitat loss.
-                Furthermore, water pollution and algae blooms—caused by runoff
-                and human activity—threaten the seagrass beds that are a
-                critical food source for manatees. Conservation efforts,
-                including protections under the Endangered Species Act and
-                designated manatee zones, have helped their numbers recover in
-                recent decades. Yet, experts warn that Florida's rapidly
-                changing environment could reverse these gains. Balancing
-                human activity with manatee conservation is crucial to
-                ensuring their long-term survival. Florida's manatees are a
-                testament to resilience, but their story highlights the
-                fragile relationship between wildlife and human development.
-                By addressing environmental challenges, we can help secure a
-                future for these iconic creatures in the waters they call
-                home.
-              </p>
-            </div>
-            <div class="news-footer">
-              <div class="author">ByOlivia Ferrari</div>
-              <div class="date">November 18, 2024</div>
-              <div class="tag">
-                <a href="#" class="bi bi-facebook"></a>
-                <a href="#" class="bi bi-instagram"></a>
-                <a href="#" class="bi bi-twitter"></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 5th article -->
-        <article>
-          <img src="./images/Travel.jpeg" alt="Travel in Swedish Lapland" />
-          <div class="news-detail">
-            <div>
-              <div class="category"><span>TRAVEL</span></div>
-              <h2>
-                Ice Skating Under the Northern Lights in Swedish Lapland
-              </h2>
-              <p class="excerpt">
-                Trade crowded ice rinks for a magical experience in Swedish
-                Lapland, where you can skate on a frozen sea beneath the
-                shimmering aurora borealis.
-              </p>
-              <p class="content">
-                For a truly unforgettable winter adventure, head to Swedish
-                Lapland and skate beneath the dazzling aurora borealis. Far
-                from the bustling crowds of traditional ice rinks, this Arctic
-                paradise offers a chance to glide across a frozen sea
-                surrounded by pristine snow-covered landscapes. The northern
-                lights, or aurora borealis, provide a breathtaking natural
-                spectacle as ribbons of green and pink light dance across the
-                dark Arctic sky. The experience is both serene and
-                exhilarating, blending the thrill of skating with the
-                tranquility of nature's most spectacular light show. Swedish
-                Lapland's frozen seas are accessible and perfect for
-                adventurers seeking something beyond the ordinary. Bundle up
-                in warm layers, lace up your skates, and enjoy the crisp
-                Arctic air as you glide across the ice. Many tours also offer
-                opportunities to combine skating with other activities, such
-                as dog sledding or warming up in a cozy cabin with traditional
-                Swedish treats. Whether you're an avid skater or just seeking
-                a unique winter getaway, ice skating under the northern lights
-                in Swedish Lapland is an unforgettable experience that
-                captures the magic of the Arctic.
-              </p>
-            </div>
-            <div class="news-footer">
-              <div class="author">BySarah Riches</div>
-              <div class="date">November 24, 2024</div>
-              <div class="tag">
-                <a href="#" class="bi bi-facebook"></a>
-                <a href="#" class="bi bi-instagram"></a>
-                <a href="#" class="bi bi-twitter"></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 6th article -->
-        <article>
-          <img src="./images/Science.jpeg" alt="Science of Fitness" />
-          <div class="news-detail">
-            <div>
-              <div class="category"><span>SCIENCE</span></div>
-              <h2>
-                The Secret to Lasting Fitness: Stronger Joints and Tendons
-              </h2>
-              <p class="excerpt">
-                Building muscle is important, but strengthening your tendons
-                and ligaments is crucial for long-term fitness and injury
-                prevention. Here's why joint health should be part of your
-                exercise routine.
-              </p>
-              <p class="content">
-                When it comes to fitness, most people focus on building muscle
-                or improving cardiovascular health. However, an
-                often-overlooked component of long-term fitness and injury
-                prevention is joint and tendon health. These connective
-                tissues—tendons that attach muscles to bones and ligaments
-                that connect bones to other bones—play a crucial role in
-                stability, mobility, and overall physical resilience. While
-                muscles respond quickly to strength training, tendons and
-                ligaments adapt more slowly. Neglecting them can lead to
-                imbalances that increase the risk of injuries like strains,
-                sprains, or even tears. Incorporating targeted exercises into
-                your routine can help strengthen these tissues, enhancing
-                stability and reducing wear and tear on joints. Key practices
-                for improving joint and tendon health include low-impact
-                strength training, which involves activities like resistance
-                band workouts and controlled bodyweight exercises to build
-                strength without overloading the joints. Eccentric movements,
-                such as slow squats or lowering weights, emphasize the
-                lengthening phase of muscle contraction and are particularly
-                effective for strengthening tendons. Additionally, flexibility
-                and mobility work, including stretching and dynamic movements,
-                helps maintain the range of motion and supports ligament
-                health. Additionally, proper nutrition plays a role in
-                connective tissue health. Foods rich in collagen, vitamin C,
-                and omega-3 fatty acids provide essential nutrients to support
-                repair and resilience. By prioritizing tendon and joint
-                health, you're not just building strength—you're laying the
-                foundation for long-term fitness, improved performance, and
-                injury-free movement as you age. So the next time you hit the
-                gym, remember: it's not just about the muscles; it's about the
-                whole system working together.
-              </p>
-            </div>
-            <div class="news-footer">
-              <div class="author">ByHannah Singleton</div>
-              <div class="date">November 19, 2024</div>
-              <div class="tag">
-                <a href="#" class="bi bi-facebook"></a>
-                <a href="#" class="bi bi-instagram"></a>
-                <a href="#" class="bi bi-twitter"></a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- left-list ends here -->
-      </div>
-
-      <!-- Right side of the main -->
-      <div class="right-side" style="height: auto; width: 100%">
-        <article class="main-article">
-          <p class="category">Tips and tricks</p>
-          <h1 class="tip">
-            How I learned to get through AI-robot when calling customer
-            support
-          </h1>
-          <div class="tags">
-            <a href="#" class="tag">War with AI</a>
-            <a href="#" class="tag">Advise</a>
-            <a href="#" class="tag">Communication</a>
-          </div>
-
-          <a href="#" class="tag">Read</a>
-        </article>
-
-        <div class="bottom-articles">
-          <div class="left bg-light">
-            <article>
-              <img src="./images/h_16213329.avif" alt="" />
-              <div class="text mx-5">
-                <p class="category">ENVIRONMENT</p>
-                <h6>
-                  Why we add fluoride to water--and how it became so
-                  controversial
-                </h6>
-                <div class="read-bar">
-                  <button class="readMore">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                  </button>
-                  <p>READ</p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="right bg-light">
-            <article>
-              <img src="./images/CAN-0101-142-21_HR_SCAN_CHAMPION_1_Pierre_Rondou_-_Camille_Dube.avif" alt="" />
-              <div class="mx-5">
-                <p class="category">SCIENCE</p>
-                <h6>
-                  Do you have a celebrity twin? The surprising science behind
-                  doppelgängers
-                </h6>
-                <div class="read-bar">
-                  <button class="readMore">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                  </button>
-                  <p>READ</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <div class="detail d-none">
-    <div class="page-nav">
-      <p id="enviroment">
-        <span class="border border-dark bg-light">HOME</span>
-      </p>
-      <p>
-        <span class="border border-dark bg-dark"></span>
-      </p>
-      <p>
-        <span class="border border-dark bg-light">ENVIROMENT</span>
-      </p>
-    </div>
-
-    <div class="description">
-      <img src="./images/h_16213329.avif" alt="" />
-      <div class="description-text">
-        <h1>
-          Why we add fluoride to water--and how it became so controversial
-        </h1>
+  <body>
+    <header>
+      <!-- Top greeting -->
+      <div class="header-top">
         <p>
-          Here's everything you need to know about the benefits and the risks
-          of this common but controversial nature element.
+          Welcome to Eddy news! Dive into the latest updates, insightful
+          articles, and breaking news from around the world!
         </p>
-        <p class="body">
-          U.S municipal water departments began adding fluoride to tap water
-          in the 1940s. Cavities began declining shortly thereafter, but this
-          addition to drinking water supplies remains controversial among some
-          fringe groups.
-        </p>
-        <br>
-        <p>By Melissa Hobson</p>
-        <p>November 22, 2024</p>
-        <div class="row">
-          <!-- Facebook Share -->
-          <div class="col-4 col-md-2">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank"
-              class="btn btn-primary">
-              <i class="fab fa-facebook-f"></i> Share
-            </a>
-          </div>
+      </div>
 
-          <!-- Twitter Share -->
-          <div class="col-4 col-md-2">
-            <a href="https://twitter.com/intent/tweet?url=https://example.com&text=Check+this+out!" target="_blank"
-              class="btn btn-info">
-              <i class="fab fa-twitter"></i> Tweet
-            </a>
-          </div>
+      <!-- Bottom nav bar -->
+      <nav id="nav-bar">
+        <img src="./images/Logo.png" alt="Eddy news logo" id="logo" />
+        <button class="btn-menu" id="btn-menu">Menu</button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Newsletters</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <!-- Banner -->
+      <div
+        class="news-name text-white align-items-center justify-content-center"
+        style="height: 150px; width: 100%"
+      >
+        <h1>Eddy News</h1>
+        <p class="text-warning h5">"Where Stories Flow Like the River"</p>
+      </div>
 
-          <!-- Instagram Link -->
-          <div class="col-4 col-md-2">
-            <a href="https://www.instagram.com" target="_blank" class="btn btn-danger">
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
+      <!-- Main section -->
+      <div class="container">
+        <!-- Left side of the main: List of news -->
+        <div class="left-list">
+          <h1 id="list-title">Today's Pick</h1>
+          <!-- 1st article -->
+          <article>
+            <img
+              src="./images/History & Culture.jpeg"
+              alt="History & Culture of Christmas"
+            />
+            <div class="news-detail">
+              <div>
+                <div class="category"><span>HISTORY & CULTURE</span></div>
+                <h2>Advent: The Tradition of Counting Down to Christmas</h2>
+                <p class="excerpt">
+                  Advent, derived from the Latin word for "arrival," is a
+                  Christian tradition marking the days leading to Christmas.
+                </p>
+                <p class="content">
+                  Advent, observed by Christians around the world, is a special
+                  time of anticipation and preparation for Christmas. The word
+                  "Advent" comes from the Latin term adventus, meaning
+                  "arrival," symbolizing the coming of Jesus Christ into the
+                  world. Spanning the four Sundays before Christmas, Advent is a
+                  period of spiritual reflection and joyful expectation. One of
+                  the most iconic Advent traditions is the use of Advent
+                  calendars, often filled with treats or small surprises for
+                  each day leading to December 25. This custom began in
+                  19th-century Germany, where families marked the days with
+                  chalk or candles. Over time, it evolved into the delightful
+                  calendars we know today, featuring chocolates, toys, or even
+                  themed surprises that add a festive flair to the countdown.
+                  Churches around the world mark Advent with special ceremonies.
+                  For example, Salisbury Cathedral in Britain hosts a moving
+                  candle-lit service called "From Darkness to Light." This
+                  annual procession, held at the beginning of Advent, symbolizes
+                  the journey from despair to hope, celebrating the coming of
+                  light into the world with the birth of Jesus. While the
+                  holiday has deep religious roots, Advent has also been
+                  embraced as a cultural tradition, bringing people together to
+                  reflect on themes of hope, love, joy, and peace. Whether
+                  through spiritual practices or the simple joy of opening a
+                  tiny door on a calendar, Advent invites us all to pause and
+                  savor the anticipation of Christmas.
+                </p>
+              </div>
+              <div class="news-footer">
+                <div class="author">By Erin Blakemore</div>
+                <div class="date">November 22, 2024</div>
+                <div class="tag">
+                  <a href="#" class="bi bi-facebook"></a>
+                  <a href="#" class="bi bi-instagram"></a>
+                  <a href="#" class="bi bi-twitter"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2nd article -->
+          <article>
+            <img src="./images/Environment.jpeg" alt="Environment of India" />
+            <div class="news-detail">
+              <div>
+                <div class="category"><span>ENVIRONMENT</span></div>
+                <h2>
+                  The 2004 Indian Ocean Tsunami: A Disaster That Caught the
+                  World Unprepared
+                </h2>
+                <p class="excerpt">
+                  A massive Indian Ocean earthquake triggered a tsunami,
+                  equivalent to 23,000 atomic bombs, devastating coastal areas
+                  and claiming over 230,000 lives.
+                </p>
+                <p class="content">
+                  On December 26, 2004, a powerful 9.1-magnitude earthquake
+                  struck beneath the Indian Ocean near the coast of Sumatra,
+                  Indonesia. The quake released energy equivalent to 23,000
+                  Hiroshima-type atomic bombs, triggering a catastrophic tsunami
+                  that became one of the deadliest natural disasters in recorded
+                  history. With waves towering as high as 100 feet, the tsunami
+                  struck 14 countries across Asia and Africa, leaving
+                  destruction and heartbreak in its wake. Caught unprepared,
+                  over 230,000 people lost their lives, and millions more were
+                  displaced. Coastal communities were particularly vulnerable,
+                  with little to no warning systems in place. In the fishing
+                  village of Nagapattinam, India, residents like the woman in
+                  the iconic photograph—reaching toward the sky in anguish—were
+                  left to grapple with unimaginable loss as entire families were
+                  swept away. The disaster exposed a global gap in tsunami
+                  awareness and preparedness. In the aftermath, international
+                  efforts led to the establishment of the Indian Ocean Tsunami
+                  Warning System, a network of seismic sensors and communication
+                  technologies designed to provide early alerts. Educational
+                  programs also emerged to teach communities about tsunami risks
+                  and evacuation protocols. Twenty years later, the 2004 tsunami
+                  remains a sobering reminder of nature's devastating power and
+                  the importance of preparedness. While significant strides have
+                  been made to improve early-warning systems, the memories of
+                  that tragic day continue to inspire global efforts to build
+                  resilience and save lives in the face of future disasters.
+                </p>
+              </div>
+
+              <div class="news-footer">
+                <div class="author">By Parissa DJangi</div>
+                <div class="date">November 10, 2024</div>
+                <div class="tag">
+                  <a href="#" class="bi bi-facebook"></a>
+                  <a href="#" class="bi bi-instagram"></a>
+                  <a href="#" class="bi bi-twitter"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3rd article -->
+          <article>
+            <img
+              src="./images/Lifestyle.jpeg"
+              alt="Lifestyle of Winter essentials"
+            />
+            <div class="news-detail">
+              <div>
+                <div><span class="category">LIFESTYLE</span></div>
+                <h2>
+                  Gear Up for the Cold: Winter Essentials Inspired by Antarctica
+                </h2>
+                <p class="excerpt">
+                  From weatherproof jackets to merino wool layers, these winter
+                  essentials helped a writer brave Antarctica's icy extremes.
+                  Here's how to stay warm and prepared for any cold-weather
+                  adventure.
+                </p>
+                <p class="content">
+                  Surviving Antarctica's unforgiving cold requires serious
+                  preparation, and our writer Kristen Pope was up to the
+                  challenge. Equipped with a carefully curated wardrobe of
+                  winter essentials, she embarked on a polar adventure that put
+                  every piece of gear to the ultimate test.The cornerstone of
+                  her Antarctic wardrobe was layering—starting with merino wool
+                  base layers for insulation and moisture-wicking properties.
+                  Mid-layers such as fleece jackets provided additional warmth
+                  while outerwear like weatherproof jackets and pants ensured
+                  protection against icy winds and snow.Waterproof gloves and
+                  insulated boots were non-negotiable. These items kept her
+                  hands and feet dry and warm during excursions on icy terrain
+                  and inflatable Zodiac boat rides. A thermal hat and a neck
+                  gaiter rounded out her accessories shielding her from the
+                  biting cold.Merino Wool Everything From socks to thermal tops
+                  this natural fiber excelled at regulating body temperature
+                  Weatherproof Jackets Durable wind-resistant and waterproof
+                  these were critical for battling harsh Antarctic conditions
+                  Waterproof Gloves Essential for handling gear and staying
+                  comfortable during long days outdoors Beyond warmth and
+                  protection Pope's gear provided comfort enabling her to fully
+                  immerse herself in the experience. From marveling at Gentoo
+                  penguins to exploring alpine landscapes her cold-weather
+                  wardrobe proved indispensable Whether you're planning an
+                  Antarctic expedition or just gearing up for a chilly winter
+                  these essentials offer tried-and-true protection against the
+                  cold. With the right gear even the most extreme weather
+                  becomes a gateway to adventure.
+                </p>
+              </div>
+              <div class="news-footer">
+                <div class="author">By Kristen Pope</div>
+                <div class="date">November 21, 2024</div>
+                <div class="tag">
+                  <a href="#" class="bi bi-facebook"></a>
+                  <a href="#" class="bi bi-instagram"></a>
+                  <a href="#" class="bi bi-twitter"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4th article -->
+          <article>
+            <img src="./images/Animal.jpeg" alt="Animal of Manatee" />
+            <div class="news-detail">
+              <div>
+                <div class="category"><span>ANIMAL</span></div>
+                <h2>Florida's Manatee Boom: A Story of Growth and Peril</h2>
+                <p class="excerpt">
+                  Manatees are thriving in Florida like never before, drawn by
+                  warm waters and human development. However, the same changes
+                  that attract them now pose serious threats to their survival.
+                </p>
+                <p class="content">
+                  Florida's waters are home to more manatees than ever, a
+                  remarkable rise for the beloved "sea cows." These gentle
+                  giants have been drawn to the Sunshine State by its warm
+                  climate and the human-made changes that provide ideal
+                  habitats, such as canals and power plant outflows that release
+                  warm water. However, the very factors contributing to their
+                  population boom may also jeopardize their future. Urban
+                  development and increased boat traffic create hazards for
+                  manatees, including fatal collisions and habitat loss.
+                  Furthermore, water pollution and algae blooms—caused by runoff
+                  and human activity—threaten the seagrass beds that are a
+                  critical food source for manatees. Conservation efforts,
+                  including protections under the Endangered Species Act and
+                  designated manatee zones, have helped their numbers recover in
+                  recent decades. Yet, experts warn that Florida's rapidly
+                  changing environment could reverse these gains. Balancing
+                  human activity with manatee conservation is crucial to
+                  ensuring their long-term survival. Florida's manatees are a
+                  testament to resilience, but their story highlights the
+                  fragile relationship between wildlife and human development.
+                  By addressing environmental challenges, we can help secure a
+                  future for these iconic creatures in the waters they call
+                  home.
+                </p>
+              </div>
+              <div class="news-footer">
+                <div class="author">ByOlivia Ferrari</div>
+                <div class="date">November 18, 2024</div>
+                <div class="tag">
+                  <a href="#" class="bi bi-facebook"></a>
+                  <a href="#" class="bi bi-instagram"></a>
+                  <a href="#" class="bi bi-twitter"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5th article -->
+          <article>
+            <img src="./images/Travel.jpeg" alt="Travel in Swedish Lapland" />
+            <div class="news-detail">
+              <div>
+                <div class="category"><span>TRAVEL</span></div>
+                <h2>
+                  Ice Skating Under the Northern Lights in Swedish Lapland
+                </h2>
+                <p class="excerpt">
+                  Trade crowded ice rinks for a magical experience in Swedish
+                  Lapland, where you can skate on a frozen sea beneath the
+                  shimmering aurora borealis.
+                </p>
+                <p class="content">
+                  For a truly unforgettable winter adventure, head to Swedish
+                  Lapland and skate beneath the dazzling aurora borealis. Far
+                  from the bustling crowds of traditional ice rinks, this Arctic
+                  paradise offers a chance to glide across a frozen sea
+                  surrounded by pristine snow-covered landscapes. The northern
+                  lights, or aurora borealis, provide a breathtaking natural
+                  spectacle as ribbons of green and pink light dance across the
+                  dark Arctic sky. The experience is both serene and
+                  exhilarating, blending the thrill of skating with the
+                  tranquility of nature's most spectacular light show. Swedish
+                  Lapland's frozen seas are accessible and perfect for
+                  adventurers seeking something beyond the ordinary. Bundle up
+                  in warm layers, lace up your skates, and enjoy the crisp
+                  Arctic air as you glide across the ice. Many tours also offer
+                  opportunities to combine skating with other activities, such
+                  as dog sledding or warming up in a cozy cabin with traditional
+                  Swedish treats. Whether you're an avid skater or just seeking
+                  a unique winter getaway, ice skating under the northern lights
+                  in Swedish Lapland is an unforgettable experience that
+                  captures the magic of the Arctic.
+                </p>
+              </div>
+              <div class="news-footer">
+                <div class="author">BySarah Riches</div>
+                <div class="date">November 24, 2024</div>
+                <div class="tag">
+                  <a href="#" class="bi bi-facebook"></a>
+                  <a href="#" class="bi bi-instagram"></a>
+                  <a href="#" class="bi bi-twitter"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6th article -->
+          <article>
+            <img src="./images/Science.jpeg" alt="Science of Fitness" />
+            <div class="news-detail">
+              <div>
+                <div class="category"><span>SCIENCE</span></div>
+                <h2>
+                  The Secret to Lasting Fitness: Stronger Joints and Tendons
+                </h2>
+                <p class="excerpt">
+                  Building muscle is important, but strengthening your tendons
+                  and ligaments is crucial for long-term fitness and injury
+                  prevention. Here's why joint health should be part of your
+                  exercise routine.
+                </p>
+                <p class="content">
+                  When it comes to fitness, most people focus on building muscle
+                  or improving cardiovascular health. However, an
+                  often-overlooked component of long-term fitness and injury
+                  prevention is joint and tendon health. These connective
+                  tissues—tendons that attach muscles to bones and ligaments
+                  that connect bones to other bones—play a crucial role in
+                  stability, mobility, and overall physical resilience. While
+                  muscles respond quickly to strength training, tendons and
+                  ligaments adapt more slowly. Neglecting them can lead to
+                  imbalances that increase the risk of injuries like strains,
+                  sprains, or even tears. Incorporating targeted exercises into
+                  your routine can help strengthen these tissues, enhancing
+                  stability and reducing wear and tear on joints. Key practices
+                  for improving joint and tendon health include low-impact
+                  strength training, which involves activities like resistance
+                  band workouts and controlled bodyweight exercises to build
+                  strength without overloading the joints. Eccentric movements,
+                  such as slow squats or lowering weights, emphasize the
+                  lengthening phase of muscle contraction and are particularly
+                  effective for strengthening tendons. Additionally, flexibility
+                  and mobility work, including stretching and dynamic movements,
+                  helps maintain the range of motion and supports ligament
+                  health. Additionally, proper nutrition plays a role in
+                  connective tissue health. Foods rich in collagen, vitamin C,
+                  and omega-3 fatty acids provide essential nutrients to support
+                  repair and resilience. By prioritizing tendon and joint
+                  health, you're not just building strength—you're laying the
+                  foundation for long-term fitness, improved performance, and
+                  injury-free movement as you age. So the next time you hit the
+                  gym, remember: it's not just about the muscles; it's about the
+                  whole system working together.
+                </p>
+              </div>
+              <div class="news-footer">
+                <div class="author">ByHannah Singleton</div>
+                <div class="date">November 19, 2024</div>
+                <div class="tag">
+                  <a href="#" class="bi bi-facebook"></a>
+                  <a href="#" class="bi bi-instagram"></a>
+                  <a href="#" class="bi bi-twitter"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- left-list ends here -->
+        </div>
+
+        <!-- Right side of the main -->
+        <div class="right-side" style="height: auto; width: 100%">
+          <article class="main-article">
+            <p class="category-main">Tips and tricks</p>
+            <h1 class="tip">
+              How I learned to get through AI-robot when calling customer
+              support
+            </h1>
+            <p class="author-main">By Tatiana Privezentseva</p>
+            <div class="tags">
+              <a href="#" class="tag">War with AI</a>
+              <a href="#" class="tag">Advise</a>
+              <a href="#" class="tag">Communication</a>
+            </div>
+
+            <a href="#" class="tag">Read</a>
+          </article>
+
+          <div class="bottom-articles">
+            <div class="left bg-light">
+              <article>
+                <img src="./images/h_16213329.avif" alt="" />
+                <div class="text mx-5">
+                  <p class="category">ENVIRONMENT</p>
+                  <h6>
+                    Why we add fluoride to water--and how it became so
+                    controversial
+                  </h6>
+                  <div class="read-bar">
+                    <button class="readMore">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </button>
+                    <p>READ</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="right bg-light">
+              <article>
+                <img
+                  src="./images/CAN-0101-142-21_HR_SCAN_CHAMPION_1_Pierre_Rondou_-_Camille_Dube.avif"
+                  alt=""
+                />
+                <div class="mx-5">
+                  <p class="category">SCIENCE</p>
+                  <h6>
+                    Do you have a celebrity twin? The surprising science behind
+                    doppelgängers
+                  </h6>
+                  <div class="read-bar">
+                    <button class="readMore">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </button>
+                    <p>READ</p>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <br />
-      <h3>What is Fluoride?</h3>
-      <p>
-        Fluoride is a naturally occurring element that has been added to tap
-        water in some parts of the U.S. since the <br />It’s championed by the
-        American Dental Association, American Academy of Pediatrics, and
-        Canadian Dental Association for its effectiveness in preventing
-        cavities. The U.S. Center for Disease Control lists water
-        fluoridation—adjusting the levels of fluoride in tap water
-        supplies—among the top 10 public health achievements. <br />Yet,
-        fluoride has a controversial history, including suggestions that
-        adding it to water was a communist plot. So, what is fluoride, why is
-        it added to the water, and should we be worried about possible risks?
-      </p>
-      <br />
-      <h3>Adding fluoride to the water</h3>
-      <p>
-        Fluoride is a naturally occurring element that has been added to tap
-        water in some parts of the U.S. since the <br />It’s championed by the
-        American Dental Association, American Academy of Pediatrics, and
-        Canadian Dental Association for its effectiveness in preventing
-        cavities. The U.S. Center for Disease Control lists water
-        fluoridation—adjusting the levels of fluoride in tap water
-        supplies—among the top 10 public health achievements. <br />Yet,
-        fluoride has a controversial history, including suggestions that
-        adding it to water was a communist plot. So, what is fluoride, why is
-        it added to the water, and should we be worried about possible risks?
-      </p>
-      <br />
-      <h3>Consuming a safe dose</h3>
-      <p>
-        Fluoride is a naturally occurring element that has been added to tap
-        water in some parts of the U.S. since the <br />It’s championed by the
-        American Dental Association, American Academy of Pediatrics, and
-        Canadian Dental Association for its effectiveness in preventing
-        cavities. The U.S. Center for Disease Control lists water
-        fluoridation—adjusting the levels of fluoride in tap water
-        supplies—among the top 10 public health achievements. <br />Yet,
-        fluoride has a controversial history, including suggestions that
-        adding it to water was a communist plot. So, what is fluoride, why is
-        it added to the water, and should we be worried about possible risks?
-      </p>
-    </div>
-  </div>
-  <div class="detail d-none">
-    <div class="page-nav">
-      <p id="science">
-        <span class="border border-dark bg-light">HOME</span>
-      </p>
-      <p>
-        <span class="border border-dark bg-dark"></span>
-      </p>
-      <p>
-        <span class="border border-dark bg-light">SCIENCE</span>
-      </p>
-    </div>
-    <div class="description">
-      <img src="./images/CAN-0101-142-21_HR_SCAN_CHAMPION_1_Pierre_Rondou_-_Camille_Dube.avif" alt="" />
+    </main>
+    <div class="detail d-none">
+      <div class="page-nav">
+        <p id="enviroment">
+          <span class="border border-dark bg-light">HOME</span>
+        </p>
+        <p>
+          <span class="border border-dark bg-dark"></span>
+        </p>
+        <p>
+          <span class="border border-dark bg-light">ENVIROMENT</span>
+        </p>
+      </div>
+
+      <div class="description">
+        <img src="./images/h_16213329.avif" alt="" />
+        <div class="description-text">
+          <h1>
+            Why we add fluoride to water--and how it became so controversial
+          </h1>
+          <p>
+            Here's everything you need to know about the benefits and the risks
+            of this common but controversial nature element.
+          </p>
+          <p class="body">
+            U.S municipal water departments began adding fluoride to tap water
+            in the 1940s. Cavities began declining shortly thereafter, but this
+            addition to drinking water supplies remains controversial among some
+            fringe groups.
+          </p>
+          <br />
+          <p>By Melissa Hobson</p>
+          <p>November 22, 2024</p>
+          <div class="row">
+            <!-- Facebook Share -->
+            <div class="col-4 col-md-2">
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://example.com"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                <i class="fab fa-facebook-f"></i> Share
+              </a>
+            </div>
+
+            <!-- Twitter Share -->
+            <div class="col-4 col-md-2">
+              <a
+                href="https://twitter.com/intent/tweet?url=https://example.com&text=Check+this+out!"
+                target="_blank"
+                class="btn btn-info"
+              >
+                <i class="fab fa-twitter"></i> Tweet
+              </a>
+            </div>
+
+            <!-- Instagram Link -->
+            <div class="col-4 col-md-2">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="btn btn-danger"
+              >
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>
-        <h1>
-          Do you have a celebrity twin? The surprising science behind
-          doppelgängers
-        </h1>
-
         <br />
-        <p class="excerpt">
-          Scientists have found genetic similarities that can make total
-          strangers share an uncanny resemblance.
-        </p>
-
-        <p class="body">
-          A portrait from the project "I'm not a look-alike!" The project has
-          been used by researchers studying what makes two random strangers
-          look so similar. Photograph by François Brunelle,
-          @francoisbrunelle.doubles
+        <h3>What is Fluoride?</h3>
+        <p>
+          Fluoride is a naturally occurring element that has been added to tap
+          water in some parts of the U.S. since the <br />It’s championed by the
+          American Dental Association, American Academy of Pediatrics, and
+          Canadian Dental Association for its effectiveness in preventing
+          cavities. The U.S. Center for Disease Control lists water
+          fluoridation—adjusting the levels of fluoride in tap water
+          supplies—among the top 10 public health achievements. <br />Yet,
+          fluoride has a controversial history, including suggestions that
+          adding it to water was a communist plot. So, what is fluoride, why is
+          it added to the water, and should we be worried about possible risks?
         </p>
         <br />
+        <h3>Adding fluoride to the water</h3>
+        <p>
+          Fluoride is a naturally occurring element that has been added to tap
+          water in some parts of the U.S. since the <br />It’s championed by the
+          American Dental Association, American Academy of Pediatrics, and
+          Canadian Dental Association for its effectiveness in preventing
+          cavities. The U.S. Center for Disease Control lists water
+          fluoridation—adjusting the levels of fluoride in tap water
+          supplies—among the top 10 public health achievements. <br />Yet,
+          fluoride has a controversial history, including suggestions that
+          adding it to water was a communist plot. So, what is fluoride, why is
+          it added to the water, and should we be worried about possible risks?
+        </p>
         <br />
-        <p class="author">By Allegra Rosenberg</p>
-        <p class="date">November 22, 2024</p>
-        <br />
-        <div class="row">
-          <!-- Facebook Share -->
-          <div class="col-4 col-md-2">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank"
-              class="btn btn-primary">
-              <i class="fab fa-facebook-f"></i> Share
-            </a>
-          </div>
+        <h3>Consuming a safe dose</h3>
+        <p>
+          Fluoride is a naturally occurring element that has been added to tap
+          water in some parts of the U.S. since the <br />It’s championed by the
+          American Dental Association, American Academy of Pediatrics, and
+          Canadian Dental Association for its effectiveness in preventing
+          cavities. The U.S. Center for Disease Control lists water
+          fluoridation—adjusting the levels of fluoride in tap water
+          supplies—among the top 10 public health achievements. <br />Yet,
+          fluoride has a controversial history, including suggestions that
+          adding it to water was a communist plot. So, what is fluoride, why is
+          it added to the water, and should we be worried about possible risks?
+        </p>
+      </div>
+    </div>
+    <div class="detail d-none">
+      <div class="page-nav">
+        <p id="science">
+          <span class="border border-dark bg-light">HOME</span>
+        </p>
+        <p>
+          <span class="border border-dark bg-dark"></span>
+        </p>
+        <p>
+          <span class="border border-dark bg-light">SCIENCE</span>
+        </p>
+      </div>
+      <div class="description">
+        <img
+          src="./images/CAN-0101-142-21_HR_SCAN_CHAMPION_1_Pierre_Rondou_-_Camille_Dube.avif"
+          alt=""
+        />
+        <div>
+          <h1>
+            Do you have a celebrity twin? The surprising science behind
+            doppelgängers
+          </h1>
 
-          <!-- Twitter Share -->
-          <div class="col-4 col-md-2">
-            <a href="https://twitter.com/intent/tweet?url=https://example.com&text=Check+this+out!" target="_blank"
-              class="btn btn-info">
-              <i class="fab fa-twitter"></i> Tweet
-            </a>
-          </div>
+          <br />
+          <p class="excerpt">
+            Scientists have found genetic similarities that can make total
+            strangers share an uncanny resemblance.
+          </p>
 
-          <!-- Instagram Link -->
-          <div class="col-4 col-md-2">
-            <a href="https://www.instagram.com" target="_blank" class="btn btn-danger">
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
+          <p class="body">
+            A portrait from the project "I'm not a look-alike!" The project has
+            been used by researchers studying what makes two random strangers
+            look so similar. Photograph by François Brunelle,
+            @francoisbrunelle.doubles
+          </p>
+          <br />
+          <br />
+          <p class="author">By Allegra Rosenberg</p>
+          <p class="date">November 22, 2024</p>
+          <br />
+          <div class="row">
+            <!-- Facebook Share -->
+            <div class="col-4 col-md-2">
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://example.com"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                <i class="fab fa-facebook-f"></i> Share
+              </a>
+            </div>
+
+            <!-- Twitter Share -->
+            <div class="col-4 col-md-2">
+              <a
+                href="https://twitter.com/intent/tweet?url=https://example.com&text=Check+this+out!"
+                target="_blank"
+                class="btn btn-info"
+              >
+                <i class="fab fa-twitter"></i> Tweet
+              </a>
+            </div>
+
+            <!-- Instagram Link -->
+            <div class="col-4 col-md-2">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="btn btn-danger"
+              >
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <br />
-      <h3>The genetic similarities between two similar looking people</h3>
-      <p>
-        Manel Esteller, a molecular geneticist based at the Carreras Leukaemia
-        Research Institute in Spain, tested the genetic similarities between
-        the lookalikes depicted in French-Canadian photographer François
-        Brunelle’s fascinating series “I’m not a look-alike!” which has been
-        ongoing since 1999. <br /><br />“He thought that I was crazy because
-        usually artists do not receive calls from scientists,” Esteller
-        remembered. Brunelle put Esteller in touch with the pairs of “twin
-        strangers” from his photographs, from all over the world, who sent the
-        researchers genetic samples in the form of mouth swabs. Esteller and
-        his team spent four years collecting and correlating the genetic data
-        before publishing the results in 2022. <br /><br />First they
-        identified which of the lookalikes actually looked the most alike.
-        <br />“It was very objective,” Esteller says. “These people were run
-        [through] three facial algorithms, the same used by police and in
-        airports,” and the ones that were algorithmically indistinguishable
-        from actual identical twins were selected for further study.
-      </p>
-      <br />
-      <div class="other-image d-flex gap-3">
-        <img src="./images/1-0301-209_Karen_Chu_-_Ashlee_Wong_copie.avif" alt="" class="flex-grow-1" />
-        <img src="./images/1-0301-217_Michael_Malone-Charles_Hall_Chasen-131_1.avif" alt="" class="flex-grow-1" />
+      <div>
+        <br />
+        <h3>The genetic similarities between two similar looking people</h3>
+        <p>
+          Manel Esteller, a molecular geneticist based at the Carreras Leukaemia
+          Research Institute in Spain, tested the genetic similarities between
+          the lookalikes depicted in French-Canadian photographer François
+          Brunelle’s fascinating series “I’m not a look-alike!” which has been
+          ongoing since 1999. <br /><br />“He thought that I was crazy because
+          usually artists do not receive calls from scientists,” Esteller
+          remembered. Brunelle put Esteller in touch with the pairs of “twin
+          strangers” from his photographs, from all over the world, who sent the
+          researchers genetic samples in the form of mouth swabs. Esteller and
+          his team spent four years collecting and correlating the genetic data
+          before publishing the results in 2022. <br /><br />First they
+          identified which of the lookalikes actually looked the most alike.
+          <br />“It was very objective,” Esteller says. “These people were run
+          [through] three facial algorithms, the same used by police and in
+          airports,” and the ones that were algorithmically indistinguishable
+          from actual identical twins were selected for further study.
+        </p>
+        <br />
+        <div class="other-image d-flex gap-3">
+          <img
+            src="./images/1-0301-209_Karen_Chu_-_Ashlee_Wong_copie.avif"
+            alt=""
+            class="flex-grow-1"
+          />
+          <img
+            src="./images/1-0301-217_Michael_Malone-Charles_Hall_Chasen-131_1.avif"
+            alt=""
+            class="flex-grow-1"
+          />
+        </div>
+        <p>
+          Molecular geneticist Manel Esteller used facial recognition software
+          to identify similar looking strangers. Their DNA revealed the same
+          genetic variants were responsible for their shared physical features.
+        </p>
+
+        <h3>The genetic basis of personalities</h3>
+        <p>
+          Fluoride is a naturally occurring element that has been added to tap
+          water in some parts of the U.S. since the <br /><br />It’s championed
+          by the American Dental Association, American Academy of Pediatrics,
+          and Canadian Dental Association for its effectiveness in preventing
+          cavities. The U.S. Center for Disease Control lists water
+          fluoridation—adjusting the levels of fluoride in tap water
+          supplies—among the top 10 public health achievements. <br /><br />Yet,
+          fluoride has a controversial history, including suggestions that
+          adding it to water was a communist plot. So, what is fluoride, why is
+          it added to the water, and should we be worried about possible risks?
+        </p>
+        <br />
+        <h3>Fascination with our living reflections</h3>
+        <p>
+          Fluoride is a naturally occurring element that has been added to tap
+          water in some parts of the U.S. since the <br /><br />It’s championed
+          by the American Dental Association, American Academy of Pediatrics,
+          and Canadian Dental Association for its effectiveness in preventing
+          cavities. The U.S. Center for Disease Control lists water
+          fluoridation—adjusting the levels of fluoride in tap water
+          supplies—among the top 10 public health achievements. <br /><br />Yet,
+          fluoride has a controversial history, including suggestions that
+          adding it to water was a communist plot. So, what is fluoride, why is
+          it added to the water, and should we be worried about possible risks?
+        </p>
       </div>
-      <p>
-        Molecular geneticist Manel Esteller used facial recognition software
-        to identify similar looking strangers. Their DNA revealed the same
-        genetic variants were responsible for their shared physical features.
-      </p>
-
-      <h3>The genetic basis of personalities</h3>
-      <p>
-        Fluoride is a naturally occurring element that has been added to tap
-        water in some parts of the U.S. since the <br /><br />It’s championed
-        by the American Dental Association, American Academy of Pediatrics,
-        and Canadian Dental Association for its effectiveness in preventing
-        cavities. The U.S. Center for Disease Control lists water
-        fluoridation—adjusting the levels of fluoride in tap water
-        supplies—among the top 10 public health achievements. <br /><br />Yet,
-        fluoride has a controversial history, including suggestions that
-        adding it to water was a communist plot. So, what is fluoride, why is
-        it added to the water, and should we be worried about possible risks?
-      </p>
-      <br />
-      <h3>Fascination with our living reflections</h3>
-      <p>
-        Fluoride is a naturally occurring element that has been added to tap
-        water in some parts of the U.S. since the <br /><br />It’s championed
-        by the American Dental Association, American Academy of Pediatrics,
-        and Canadian Dental Association for its effectiveness in preventing
-        cavities. The U.S. Center for Disease Control lists water
-        fluoridation—adjusting the levels of fluoride in tap water
-        supplies—among the top 10 public health achievements. <br /><br />Yet,
-        fluoride has a controversial history, including suggestions that
-        adding it to water was a communist plot. So, what is fluoride, why is
-        it added to the water, and should we be worried about possible risks?
-      </p>
     </div>
-  </div>
-  <footer class="bg-light"></footer>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="./scripts/script.js"></script>
-</body>
+    <footer>
+      <div class="footer__container">
+        <h3 class="footer__title">Follow Us</h3>
 
+        <div class="tag">
+          <a href="#" class="bi bi-facebook"></a>
+          <a href="#" class="bi bi-instagram"></a>
+          <a href="#" class="bi bi-twitter"></a>
+        </div>
+
+        <div class="footer__person">
+          <p class="footer__person-name">Tatiana Privezentseva</p>
+          <p class="footer__person-company">Chief Editor</p>
+
+          <p class="footer__info-1">503 Broadway Penthouse,</p>
+          <p class="footer__info-2">New York, NY 10012, USA</p>
+          <a class="footer__email" href="mailto:info@thebeesknees.com"
+            >info@eddynews.com</a
+          >
+        </div>
+        <div class="footer__person">
+          <p class="footer__person-name">Siyuan Peng</p>
+          <p class="footer__person-company">Digital Media Manager</p>
+          <p class="footer__info-1">Booking Agent for</p>
+          <p class="footer__info-2">US / South America / China</p>
+          <a class="footer__email" href="mailto:pearl.gregg@limitlessag.com"
+            >speng@eddynews.com</a
+          >
+        </div>
+        <div class="footer__person">
+          <p class="footer__person-name">Du Rongchun</p>
+          <p class="footer__person-company">Content Marketing Manager</p>
+          <p class="footer__info-1">Booking Agent for</p>
+          <p class="footer__info-2">UK / EU / AU</p>
+          <a class="footer__email" href="mailto:cwhyte@archentertainment.com"
+            >durongchun@eddynews.com</a
+          >
+        </div>
+      </div>
+
+      <div class="copyright">
+        <img
+          src="./images/Logo.png"
+          class="footer-logo"
+          alt="Eddy news logo"
+          id="logo"
+        />
+        <p class="copyright-text">
+          Copyright Eddy News © 2024 All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
