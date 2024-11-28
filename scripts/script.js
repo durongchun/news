@@ -49,26 +49,23 @@ for (let i = 0; i < readMores.length; i++) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  pageNavEnvir.addEventListener("click", function () {
-    console.log("page nav");
+pageNavEnvir.addEventListener("click", () => {
+  detailEnvor.classList.add("fire-effect");
+  // Optional: Hide the content completely after the animation
+  setTimeout(() => {
     mainContent.classList.remove("d-none");
     detailEnvor.classList.add("d-none");
+    location.reload();
+  }, 2000); // Matches the animation duration
+});
 
-    // Refresh the page after the action
-    setTimeout(function () {
-      location.reload();
-    }, 10); // Adjust delay as needed (optional)
-  });
+pageNavScien.addEventListener("click", function () {
+  console.log("page nav");
+  mainContent.classList.remove("d-none");
+  detailEnvor.classList.add("d-none");
 
-  pageNavScien.addEventListener("click", function () {
-    console.log("page nav");
-    mainContent.classList.remove("d-none");
-    detailEnvor.classList.add("d-none");
-
-    // Refresh the page after the action
-    setTimeout(function () {
-      location.reload();
-    }, 100); // Adjust delay as needed (optional)
-  });
+  // Refresh the page after the action
+  setTimeout(function () {
+    location.reload();
+  }, 100); // Adjust delay as needed (optional)
 });

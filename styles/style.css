@@ -315,4 +315,35 @@ footer {
         gap: 1rem;
         cursor: pointer;
     }
+
+    /* Define fire-like animation */
+    @keyframes fireDisappear {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: scale(1.1) rotate(2deg);
+            filter: blur(2px) brightness(1.5);
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(0.8) rotate(-3deg);
+            filter: blur(5px) brightness(2);
+        }
+    }
+
+    /* Initially, no animation is applied */
+    .content {
+        transition: all 0.5s ease;
+    }
+
+    /* Add the animation when the class is applied */
+    .fire-effect {
+        animation: fireDisappear 2s forwards;
+    }
+
 }
