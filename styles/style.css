@@ -7,15 +7,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --text-color: #f0ad4e;
+  --font-family: GeoEditMedium, Franklin Gothic Medium, Franklin Gothic,
+    ITC Franklin Gothic, Helvetica, Arial, sans-serif;
+  --font-size-large: 20px;
+  --font-size-medium: 18px;
+  --font-size-small: 10px;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: GeoEditMedium, Franklin Gothic Medium, Franklin Gothic,
-    ITC Franklin Gothic, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
 }
 
 .wrapper {
-  background-color: var(--primary-color);
+  background-color: black;
   padding-bottom: 3rem;
 }
 
@@ -50,12 +60,12 @@ header {
   align-items: center;
   padding: 5px;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: black;
 }
 
 .header-top p {
   font-size: 1rem;
-  color: var(--secondary-color);
+  color: white;
   margin: 0;
 }
 
@@ -71,10 +81,10 @@ header {
 }
 
 .btn-menu {
-  background-color: var(--secondary-color);
+  background-color: white;
   border: none;
   margin: 10px;
-  font-size: var(--font-size-medium);
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -93,10 +103,6 @@ main {
   display: none;
 }
 
-#nav-bar ul.show {
-  display: block;
-}
-
 #nav-bar li {
   justify-content: end;
 }
@@ -104,18 +110,18 @@ main {
 #nav-bar li a {
   display: flex;
   flex-direction: column;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
+  color: white;
+  background-color: black;
   text-align: left;
-  font-size: var(--font-size-medium);
+  font-size: 18px;
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 #nav-bar li a:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: white;
+  color: black;
 }
 
 /* Header style ends here */
@@ -133,8 +139,8 @@ main {
 }
 
 #list-title {
-  border-left: 4px solid var(--text-color);
-  color: var(--secondary-color);
+  border-left: 4px solid #f0ad4e;
+  color: white;
   padding-left: 20px;
 }
 
@@ -143,7 +149,7 @@ main {
   flex-direction: row;
   height: 160px;
   margin: 5px;
-  color: var(--secondary-color);
+  color: white;
   transition: transform 0.3s ease-in-out;
   /* Smooth the transition*/
   transform-origin: right;
@@ -171,12 +177,12 @@ main {
 }
 
 h2 {
-  font-size: var(--font-size-large);
+  font-size: 20px;
 }
 
 .excerpt,
 .category {
-  font-size: var(--font-size-medium);
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -187,19 +193,12 @@ h2 {
 }
 
 .tag a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: var(--font-size-small);
-}
-.tag a::before {
-  content: '•';
-  margin-right: 3px;
-  color: var(--text-color);
+  color: white;
+  padding-right: 30px;
 }
 
 .tag a:hover {
-  color: var(--text-color);
+  color: #f0ad4e;
 }
 
 .content,
@@ -209,10 +208,10 @@ h2 {
 }
 
 /* Footer */
-/* footer {
+footer {
   height: 100px;
   background-color: bisque;
-} */
+}
 
 /* -------Lucy--------------- */
 
@@ -243,8 +242,8 @@ h2 {
 
   #nav-bar li a {
     display: block;
-    color: black;
-    background-color: white;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -253,8 +252,8 @@ h2 {
   }
 
   #nav-bar li a:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #111;
+    color: white;
   }
 }
 
@@ -284,18 +283,18 @@ h2 {
 
   #nav-bar li a {
     display: block;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: black;
+    background-color: white;
     text-align: center;
-    font-size: var(--font-size-medium);
+    font-size: 18px;
     font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
   }
 
   #nav-bar li a:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #111;
+    color: white;
   }
 
   /* Nav bar end here */
@@ -307,16 +306,6 @@ h2 {
     gap: 1rem;
   }
 
-  /* -----------Tatiana------------- */
-  .main-article {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../images/phone.jpg');
-    background-size: cover;
-    padding: 1rem;
-    justify-content: flex-end;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  }
   /* -----------Tatiana------------- */
   .main-article {
     display: flex;
@@ -367,7 +356,7 @@ h2 {
   footer {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
   }
 
   footer p {
@@ -382,6 +371,7 @@ h2 {
     width: 100%;
     border-bottom: 1px solid rgb(141, 141, 141);
     border-top: 1px solid rgb(141, 141, 141);
+    background-color: var(--primary-color);
   }
 
   .footer__title,
@@ -506,10 +496,13 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
-    /* width: 80%;
-        padding: 5rem;
-        padding-left: 20%; */
     gap: 3rem;
+  }
+
+  .description-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .description img {
@@ -544,242 +537,34 @@ h2 {
     gap: 1rem;
     cursor: pointer;
   }
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
 
-.container {
-  display: grid;
-  grid-template-columns: 1.5fr 3fr;
-}
+  /* Define fire-like animation */
+  @keyframes fireDisappear {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
 
-/* Nav bar style */
-.btn-menu {
-  display: none;
-}
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1) rotate(2deg);
+      filter: blur(2px) brightness(1.5);
+    }
 
-#nav-bar ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: end;
-}
-
-#nav-bar li a {
-  display: block;
-  color: black;
-  background-color: white;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#nav-bar li a:hover {
-  background-color: #111;
-  color: white;
-}
-
-/* Nav bar end here */
-
-/* Right side style */
-.right-side {
-  display: grid;
-  grid-template-rows: 1.09fr 1fr;
-  gap: 1rem;
-}
-
-/* -----------Tatiana------------- */
-.main-article {
-  display: flex;
-  flex-direction: column;
-  background-image: url('../images/phone.jpg');
-  background-size: cover;
-  padding: 1rem;
-  justify-content: flex-end;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-.tip {
-  color: var(--secondary-color);
-}
-
-a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-.tags {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 0.5rem;
-}
-
-/* -------------Lucy-----------*/
-.bottom-articles {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.bottom-articles article {
-  display: grid;
-  grid-template-rows: 2fr, 1.5;
-}
-
-.bottom-articles article text {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-}
-
-.read-bar {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 2rem;
-}
-
-.readMore {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  border: 0;
-  position: relative;
-  cursor: pointer;
-  /* indicate it's clickable */
-}
-
-.bar {
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: var(--primary-color);
-  transition: all 0.3s ease-in-out;
-  /* Add transition for smooth animation */
-}
-
-/* When 'readMore' has the 'active' class */
-.readMore.active .bar:nth-child(1) {
-  transform: rotate(45deg);
-  position: absolute;
-}
-
-.readMore.active .bar:nth-child(2),
-.readMore.active .bar:nth-child(3) {
-  opacity: 0;
-  /* Hide the middle bar */
-}
-
-.readMore.active .bar:nth-child(4) {
-  transform: rotate(-45deg);
-  position: absolute;
-}
-
-/* Transition for the bars when no active state */
-.readMore .bar {
-  transition: all 0.3s ease-in-out;
-}
-
-.excerpt {
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: 0.1px;
-  line-height: 1.273;
-}
-
-.category,
-.read-bar {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  line-height: 1.5;
-}
-
-.bottom-articles article img {
-  width: 100%;
-  height: 22.7rem;
-  object-fit: cover;
-}
-
-.detail {
-  display: grid;
-  grid-template-rows: 1fr 10fr;
-  width: 80%;
-  align-items: end;
-  padding-left: 20%;
-}
-
-.description {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  flex-wrap: wrap;
-  /* width: 80%;
-    padding: 5rem;
-    padding-left: 20%; */
-  gap: 3rem;
-}
-
-.description img {
-  object-fit: cover;
-}
-
-.other-image {
-  width: 50%;
-  height: 25rem;
-}
-
-/* Initially, the container is fully visible and positioned normally */
-.container {
-  opacity: 1;
-  transform: translateY(0);
-  /* Starts at normal position */
-  transition: opacity 4s ease, transform 2s ease;
-  /* Animate both opacity and sliding */
-}
-
-/* When we want to slide it up and fade it out */
-.container.fading {
-  opacity: 0;
-  /* Fully fade out */
-  transform: translateY(-600px);
-  /* Slide up by 50px, adjust this value as needed */
-}
-
-.page-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  cursor: pointer;
-}
-
-/* Define fire-like animation */
-@keyframes fireDisappear {
-  0% {
-    opacity: 1;
-    transform: scale(1);
+    100% {
+      opacity: 0;
+      transform: scale(0.8) rotate(-3deg);
+      filter: blur(5px) brightness(2);
+    }
   }
 
-  50% {
-    opacity: 0.5;
-    transform: scale(1.1) rotate(2deg);
-    filter: blur(2px) brightness(1.5);
+  /* Initially, no animation is applied */
+  .content {
+    transition: all 0.5s ease;
   }
 
-  100% {
-    opacity: 0;
-    transform: scale(0.8) rotate(-3deg);
-    filter: blur(5px) brightness(2);
+  /* Add the animation when the class is applied */
+  .fire-effect {
+    animation: fireDisappear 2s forwards;
   }
-}
-
-/* Initially, no animation is applied */
-.content {
-  transition: all 0.5s ease;
-}
-
-/* Add the animation when the class is applied */
-.fire-effect {
-  animation: fireDisappear 2s forwards;
 }
