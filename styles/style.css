@@ -79,6 +79,10 @@ main {
   display: none;
 }
 
+#nav-bar ul.show {
+  display: block;
+}
+
 #nav-bar li {
   justify-content: end;
 }
@@ -165,7 +169,14 @@ h2 {
 
 .tag a {
   color: white;
-  padding-right: 30px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 10px;
+}
+.tag a::before {
+  content: '•';
+  margin-right: 3px;
+  color: #f0ad4e;
 }
 .tag a:hover {
   color: #f0ad4e;
