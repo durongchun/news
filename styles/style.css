@@ -20,12 +20,22 @@ body {
     padding-bottom: 3rem;
 }
 
+/* -----------lucy--------- */
 img {
     width: 100%;
     border: 0;
 }
 
----------Siyuan--------------
+article img {
+    cursor: pointer;
+
+}
+
+article img:hover {
+    transform: scale(0.95);
+}
+
+/* ---------Siyuan-------------- */
 
 /* Nav bar style */
 header {
@@ -345,5 +355,6 @@ footer {
     .fire-effect {
         animation: fireDisappear 2s forwards;
     }
+
 
 }

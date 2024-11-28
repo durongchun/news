@@ -51,7 +51,7 @@ for (let i = 0; i < readMores.length; i++) {
 
 pageNavEnvir.addEventListener("click", () => {
   detailEnvor.classList.add("fire-effect");
-  // Optional: Hide the content completely after the animation
+
   setTimeout(() => {
     mainContent.classList.remove("d-none");
     detailEnvor.classList.add("d-none");
@@ -60,12 +60,11 @@ pageNavEnvir.addEventListener("click", () => {
 });
 
 pageNavScien.addEventListener("click", function () {
-  console.log("page nav");
-  mainContent.classList.remove("d-none");
-  detailEnvor.classList.add("d-none");
+  detailScien.classList.add("fire-effect");
 
-  // Refresh the page after the action
   setTimeout(function () {
+    mainContent.classList.remove("d-none");
+    detailScien.classList.add("d-none");
     location.reload();
-  }, 100); // Adjust delay as needed (optional)
+  }, 2000); // Adjust delay as needed (optional)
 });
