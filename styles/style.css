@@ -25,7 +25,7 @@ body {
 }
 
 .wrapper {
-  background-color: var(--primary-color);
+  background-color: black;
   padding-bottom: 3rem;
 }
 
@@ -60,12 +60,12 @@ header {
   align-items: center;
   padding: 5px;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: black;
 }
 
 .header-top p {
   font-size: 1rem;
-  color: var(--secondary-color);
+  color: white;
   margin: 0;
 }
 
@@ -81,10 +81,10 @@ header {
 }
 
 .btn-menu {
-  background-color: var(--secondary-color);
+  background-color: white;
   border: none;
   margin: 10px;
-  font-size: var(--font-size-medium);
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -103,10 +103,6 @@ main {
   display: none;
 }
 
-#nav-bar ul.show {
-  display: block;
-}
-
 #nav-bar li {
   justify-content: end;
 }
@@ -114,18 +110,18 @@ main {
 #nav-bar li a {
   display: flex;
   flex-direction: column;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
+  color: white;
+  background-color: black;
   text-align: left;
-  font-size: var(--font-size-medium);
+  font-size: 18px;
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 #nav-bar li a:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: white;
+  color: black;
 }
 
 /* Header style ends here */
@@ -143,8 +139,8 @@ main {
 }
 
 #list-title {
-  border-left: 4px solid var(--text-color);
-  color: var(--secondary-color);
+  border-left: 4px solid #f0ad4e;
+  color: white;
   padding-left: 20px;
 }
 
@@ -153,7 +149,7 @@ main {
   flex-direction: row;
   height: 160px;
   margin: 5px;
-  color: var(--secondary-color);
+  color: white;
   transition: transform 0.3s ease-in-out;
   /* Smooth the transition*/
   transform-origin: right;
@@ -181,12 +177,12 @@ main {
 }
 
 h2 {
-  font-size: var(--font-size-large);
+  font-size: 20px;
 }
 
 .excerpt,
 .category {
-  font-size: var(--font-size-medium);
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -197,19 +193,12 @@ h2 {
 }
 
 .tag a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: var(--font-size-small);
-}
-.tag a::before {
-  content: '•';
-  margin-right: 3px;
-  color: var(--text-color);
+  color: white;
+  padding-right: 30px;
 }
 
 .tag a:hover {
-  color: var(--text-color);
+  color: #f0ad4e;
 }
 
 .content,
@@ -256,15 +245,15 @@ footer {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     text-align: center;
-    font-size: var(--font-size-medium);
+    font-size: 18px;
     font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
   }
 
   #nav-bar li a:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #111;
+    color: white;
   }
 }
 
@@ -294,18 +283,18 @@ footer {
 
   #nav-bar li a {
     display: block;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: black;
+    background-color: white;
     text-align: center;
-    font-size: var(--font-size-medium);
+    font-size: 18px;
     font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
   }
 
   #nav-bar li a:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #111;
+    color: white;
   }
 
   /* Nav bar end here */
@@ -318,97 +307,100 @@ footer {
   }
 
   /* -----------Tatiana------------- */
-    .main-article {
-        display: flex;
-        flex-direction: column;
-        background-image: url('../images/phone.jpg');
-        background-size: cover;
-        padding: 1rem;
-        justify-content: flex-end;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/phone.jpg');
+    background-size: cover;
+    padding: 1rem;
+    justify-content: flex-end;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
 
-    .tip {
-        color: white;
-    }
+  .tip {
+    color: white;
+  }
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 
-    .tags {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        padding-bottom: 0.5rem;
-    }
-    
-    .category-main {
-        color: white;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        font-weight: 400;
-        letter-spacing: 3px;
-        line-height: 1.5;
-        padding-bottom: 0.2rem;
-        margin-bottom: 0;
-      }
-    
-      .author-main {
-        color: rgb(250, 208, 72);
-        font-size: 1.2rem;
-        font-weight: 400;
-        line-height: 1.5;
-        padding-bottom: 0.2rem;
-        margin-bottom: 0;
-      }
-    
-      footer {
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-      }
-    
-      footer p {
-        color: rgb(188, 184, 184);
-      }
-    
-      .footer__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem;
-        width: 100%;
-        border-bottom: 1px solid rgb(141, 141, 141);
-        border-top: 1px solid rgb(141, 141, 141);
-      }
-    
-      .footer__title,
-      .footer__person-name {
-        color: #f0ad4e;
-      }
-    
-      .copyright {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 0.5rem;
-        font-size: 0.9rem;
-        background-color: rgb(60, 60, 60);
-      }
-    
-      .copyright-text {
-        color: rgb(223, 221, 221);
-        padding-right: 0.2rem;
-      }
-    
-      .footer-logo {
-        padding: 0;
-        margin-top: 1rem;
-        width: 50px;
-      }
+  .tags {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .category-main {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0;
+  }
+
+  .author-main {
+    color: rgb(250, 208, 72);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+  }
+
+  footer p {
+    color: rgb(188, 184, 184);
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    border-top: 1px solid rgb(141, 141, 141);
+    background-color: var(--primary-color);
+  }
+
+  .footer__title,
+  .footer__person-name {
+    color: #f0ad4e;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background-color: rgb(60, 60, 60);
+  }
+
+  .copyright-text {
+    color: rgb(223, 221, 221);
+    padding-right: 0.2rem;
+  }
+
+  .footer-logo {
+    padding: 0;
+    margin-top: 1rem;
+    width: 50px;
+  }
+
+
   /* -------------Lucy-----------*/
   .bottom-articles {
     display: grid;
@@ -445,7 +437,7 @@ footer {
     display: block;
     width: 30px;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: #333;
     transition: all 0.3s ease-in-out;
     /* Add transition for smooth animation */
   }
