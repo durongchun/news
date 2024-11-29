@@ -19,8 +19,8 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 0.6fr 10.5fr 3fr;
   font-family: var(--font-family);
 }
 
@@ -48,7 +48,6 @@ excerpt {
   font-size: var(--font-size-large);
 }
 
-/* -------------Lucy-----------*/
 .bottom-articles {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -60,8 +59,6 @@ excerpt {
   width: 100%;
   object-fit: cover;
 }
-
-
 
 .bottom-articles article {
   display: grid;
@@ -85,7 +82,6 @@ excerpt {
   border: 0;
   position: relative;
   cursor: pointer;
-  /* indicate it's clickable */
 }
 
 .bar {
@@ -253,8 +249,8 @@ excerpt {
 }
 
 .main-article-image {
-    display: none;
-  }
+  display: none;
+}
 
 .tip {
   color: white;
@@ -292,11 +288,11 @@ a {
   margin-bottom: 0;
 }
 
-footer {
+/* footer {
   display: flex;
-  flex-direction: column;
-  /* background-color: black; */
-}
+  flex-direction: row;
+  
+} */
 
 footer p {
   color: rgb(188, 184, 184);
@@ -304,13 +300,14 @@ footer p {
 
 .footer__container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: end;
   padding: 1rem;
   width: 100%;
   border-bottom: 1px solid rgb(141, 141, 141);
   border-top: 1px solid rgb(141, 141, 141);
   background-color: black;
+  /* margin-top: 61rem; */
 }
 
 .footer__title,
@@ -340,7 +337,7 @@ footer p {
 }
 
 
----------Siyuan--------------
+/* ---------Siyuan-------------- */
 
 /* Header style */
 header {
@@ -510,11 +507,7 @@ h2 {
   display: none;
 }
 
-/* Footer */
-footer {
-  height: 100px;
-  background-color: bisque;
-}
+
 
 @media (min-width: 768px) {
   .btn-menu {
@@ -640,17 +633,17 @@ footer {
     line-height: 1.5;
     padding-bottom: 0.2rem;
     margin-bottom: 0;
-  }
+  }*/
 
-  footer {
+  /* footer {
     display: flex;
     flex-direction: column;
-    
-  }
 
-  footer p {
+  } */
+
+  /* footer p {
     color: rgb(188, 184, 184);
-  }
+  } */
 
   .footer__container {
     display: flex;
@@ -661,6 +654,7 @@ footer {
     border-bottom: 1px solid rgb(141, 141, 141);
     border-top: 1px solid rgb(141, 141, 141);
     background-color: black;
+    margin: 0;
   }
 
   .footer__title,
@@ -687,7 +681,7 @@ footer {
     padding: 0;
     margin-top: 1rem;
     width: 50px;
-  } */
+  }
 
   /* -------------Lucy-----------*/
   .bottom-articles {
