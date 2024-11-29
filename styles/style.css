@@ -371,7 +371,7 @@ footer {
     width: 100%;
     border-bottom: 1px solid rgb(141, 141, 141);
     border-top: 1px solid rgb(141, 141, 141);
-    background-color: var(--primary-color);
+    background-color: black;
   }
 
   .footer__title,
@@ -399,7 +399,6 @@ footer {
     margin-top: 1rem;
     width: 50px;
   }
-
 
   /* -------------Lucy-----------*/
   .bottom-articles {
