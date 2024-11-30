@@ -20,7 +20,7 @@
 
 body {
   display: grid;
-  grid-template-rows: 0.6fr 10.5fr 3fr;
+  grid-template-rows: 0.6fr 10.8fr 3fr;
   font-family: var(--font-family);
 }
 
@@ -166,10 +166,12 @@ excerpt {
   object-fit: cover;
 }
 
+
+
 .tag-row .tag {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .tag-row .row {
