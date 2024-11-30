@@ -1,54 +1,71 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Select the main article and the list of articles
     const mainArticle = document.querySelector(".main-article");
-    const mainArticleImage = mainArticle.querySelector(".main-article-image"); // Hidden image
     const listArticles = document.querySelectorAll(".left-list article");
   
     listArticles.forEach((article) => {
       article.addEventListener("click", () => {
-        // Swap images (main article background vs. article <img>)
-        const mainBgImage = mainArticle.style.backgroundImage; // Get main article's background image
-        const articleImage = article.querySelector("img"); // Get the clicked article's <img> element
+        // Add fade-out class to both articles
+        mainArticle.classList.add("fade-out");
+        article.classList.add("fade-out");
   
-        // Swap background image and <img> src
-        mainArticle.style.backgroundImage = `url("${articleImage.src}")`;
-        articleImage.src = mainArticleImage.src; // Swap with hidden main article image
-        mainArticleImage.src = mainBgImage.replace(/^url\(["']?/, "").replace(/["']?\)$/, ""); // Sync hidden image with background
+        // Wait for fade-out animation to complete before swapping content
+        setTimeout(() => {
+          // Swap image
+          const mainImage = mainArticle.style.backgroundImage.replace(
+            /^url\(["']?/, ""
+          ).replace(/["']?\)$/, "");
+          const articleImage = article.querySelector("img");
   
-        // Swap category
-        const mainCategory = mainArticle.querySelector(".category-main");
-        const articleCategory = article.querySelector(".category span");
+          const tempImage = mainImage;
+          mainArticle.style.backgroundImage = `url("${articleImage.src}")`;
+          articleImage.src = tempImage;
   
-        const tempCategory = mainCategory.textContent;
-        mainCategory.textContent = articleCategory.textContent;
-        articleCategory.textContent = tempCategory;
+          // Swap category
+          const mainCategory = mainArticle.querySelector(".category-main");
+          const articleCategory = article.querySelector(".category span");
   
-        // Swap title
-        const mainTitle = mainArticle.querySelector("h1");
-        const articleTitle = article.querySelector("h2");
+          const tempCategory = mainCategory.textContent;
+          mainCategory.textContent = articleCategory.textContent;
+          articleCategory.textContent = tempCategory;
   
-        const tempTitle = mainTitle.textContent;
-        mainTitle.textContent = articleTitle.textContent;
-        articleTitle.textContent = tempTitle;
+          // Swap title
+          const mainTitle = mainArticle.querySelector("h1.tip");
+          const articleTitle = article.querySelector("h2");
   
-        // Swap author
-        const mainAuthor = mainArticle.querySelector(".author-main");
-        const articleAuthor = article.querySelector(".author");
+          const tempTitle = mainTitle.textContent;
+          mainTitle.textContent = articleTitle.textContent;
+          articleTitle.textContent = tempTitle;
   
-        const tempAuthor = mainAuthor.textContent;
-        mainAuthor.textContent = articleAuthor.textContent;
-        articleAuthor.textContent = tempAuthor;
+          // Swap author
+          const mainAuthor = mainArticle.querySelector(".author-main");
+          const articleAuthor = article.querySelector(".author");
   
-        // Swap tags
-        const mainTagsContainer = mainArticle.querySelector(".tags");
-        const articleTagsContainer = article.querySelector(".tag");
+          const tempAuthor = mainAuthor.textContent;
+          mainAuthor.textContent = articleAuthor.textContent;
+          articleAuthor.textContent = tempAuthor;
   
-        const tempTagsHTML = mainTagsContainer.innerHTML;
-        mainTagsContainer.innerHTML = articleTagsContainer.innerHTML;
-        articleTagsContainer.innerHTML = tempTagsHTML;
+          // Swap tags
+          const mainTagsContainer = mainArticle.querySelector(".tags");
+          const articleTagsContainer = article.querySelector(".tag");
+  
+          const tempTagsHTML = mainTagsContainer.innerHTML;
+          mainTagsContainer.innerHTML = articleTagsContainer.innerHTML;
+          articleTagsContainer.innerHTML = tempTagsHTML;
+  
+          // Add fade-in class to both articles after content swap
+          mainArticle.classList.remove("fade-out");
+          article.classList.remove("fade-out");
+          mainArticle.classList.add("fade-in");
+          article.classList.add("fade-in");
+  
+          // Remove fade-in class after animation
+          setTimeout(() => {
+            mainArticle.classList.remove("fade-in");
+            article.classList.remove("fade-in");
+          }, 500);
+        }, 500);
       });
     });
   });
-  

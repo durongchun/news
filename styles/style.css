@@ -310,6 +310,9 @@ a {
   margin-bottom: 0;
 }
 
+
+
+
 /* footer {
   display: flex;
   flex-direction: row;
@@ -667,61 +670,132 @@ h2 {
   }
 
   /* -----------Tatiana------------- */
-  /* .main-article {
+  .main-article {
+    position: relative;
     display: flex;
     flex-direction: column;
-    background-image: url('../images/phone.jpg');
-    background-size: cover;
-    padding: 1rem;
     justify-content: flex-end;
+    padding: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    height: 100%; 
+    max-height: 800px; 
   }
-
-  .tip {
-    color: white;
+  
+  .main-article-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
   }
-
-  a {
-    text-decoration: none;
-    color: white;
+  
+  .main-article-content {
+    position: relative;
+    z-index: 2; 
+    color: white; 
   }
-
-  .tags {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
+  
   .category-main {
-    color: white;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
     line-height: 1.5;
-    padding-bottom: 0.2rem;
-    margin-bottom: 0;
+    margin-bottom: 0.2rem;
+  }
+  
+  .tip {
+    font-size: 1.5rem;
+   
+  }
+  
+  .author-main {
+    font-size: 1.2rem;
+    color: rgb(250, 208, 72);
+  }
+  
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .tags .tag {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+  
+  .tags .tag:hover {
+    background-color: rgba(255, 255, 255, 0.4);
   }
 
-  .author-main {
-    color: rgb(250, 208, 72);
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding-bottom: 0.2rem;
-    margin-bottom: 0;
-  }*/
+  @keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .main-article {
+    animation: fadeSlideUp 1s ease-out;
+    opacity: 0; 
+    animation-fill-mode: forwards; 
+  }
+  
+  .main-article:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
+  }
+  
+  /* works with js if we can fix that */
 
-  /* footer {
-    display: flex;
-    flex-direction: column;
-
+  /* @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .main-article,
+  .left-list article {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .main-article.fade-out,
+  .left-list article.fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+  
+  .main-article.fade-in,
+  .left-list article.fade-in {
+    animation: fadeIn 0.5s forwards;
   } */
-
-  /* footer p {
-    color: rgb(188, 184, 184);
-  } */
+  
 
   .footer__container {
     display: flex;
