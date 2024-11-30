@@ -20,7 +20,7 @@
 
 body {
   display: grid;
-  grid-template-rows: 0.6fr 10.8fr 3fr;
+  grid-template-rows: 0.45fr 10.8fr 3fr;
   font-family: var(--font-family);
 }
 
@@ -153,8 +153,8 @@ excerpt {
   gap: 1rem;
 }
 
-.description-text>div>div>a,
-.description>div>div>div>a {
+.description-text > div > div > a,
+.description > div > div > div > a {
   color: var(--text-color);
 }
 
@@ -165,8 +165,6 @@ excerpt {
 .description img {
   object-fit: cover;
 }
-
-
 
 .tag-row .tag {
   display: flex;
@@ -237,8 +235,6 @@ excerpt {
 .fire-effect {
   animation: fireDisappear 2s forwards;
 }
-
-
 
 /* -----------Tatiana------------- */
 .main-article {
@@ -339,12 +335,11 @@ footer p {
   width: 50px;
 }
 
-
 /* ---------Siyuan-------------- */
 
 /* Header style */
 header {
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -408,6 +403,7 @@ main {
   width: 200px;
   background-color: var(--secondary-color);
   transition: right 0.3s ease-in-out;
+  z-index: 1;
 }
 
 #nav-bar li {
@@ -433,7 +429,8 @@ main {
 }
 
 #nav-bar ul.slide-out {
-  right: 0; /* Slide in from right */
+  right: 0;
+  /* Slide in from right */
   display: flex;
   flex-direction: column;
 }
@@ -528,25 +525,36 @@ h2 {
   display: none;
 }
 
-
-
 @media (min-width: 768px) {
   body {
     display: grid;
-    grid-template-rows: 0.6fr 10.2fr 3fr;
+    grid-template-rows: 0.3fr 10.2fr 3fr;
     font-family: var(--font-family);
   }
 
+  /* ----------- Siyuan ------------*/
   .btn-menu {
     display: none;
+  }
+
+  #nav-bar {
+    position: relative;
   }
 
   #nav-bar ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: calc(100% - 200px);
+    position: absolute;
     justify-content: end;
+    margin-top: 0;
+    right: 0;
+  }
+
+  #nav-bar li {
+    display: inline-block;
+    width: max-content;
   }
 
   #nav-bar li a {
@@ -565,7 +573,7 @@ h2 {
     color: var(--secondary-color);
   }
 }
-
+/* -----------Header ends here------------*/
 @media (min-width: 1024px) {
   body {
     display: flex;
@@ -577,17 +585,29 @@ h2 {
     grid-template-columns: 1.5fr 3fr;
   }
 
+  /* ----------- Siyuan ------------*/
   /* Nav bar style */
   .btn-menu {
     display: none;
+  }
+
+  #nav-bar {
+    position: relative;
   }
 
   #nav-bar ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: calc(100% - 200px);
     justify-content: end;
+    margin-top: 0;
+    right: 0;
+  }
+
+  #nav-bar li {
+    display: inline-block;
+    width: max-content;
   }
 
   #nav-bar li a {
@@ -771,12 +791,10 @@ h2 {
     padding-top: 4rem;
   }
 
-
   .other-image {
     display: flex;
     flex-direction: row;
     width: 50%;
     height: 25rem;
   }
-
 }
