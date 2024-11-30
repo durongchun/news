@@ -44,7 +44,7 @@ article:hover {
   cursor: pointer;
 }
 
-excerpt {
+.j-title+.p-excerpt {
   font-size: var(--font-size-large);
 }
 
@@ -94,7 +94,7 @@ excerpt {
 }
 
 /* When 'readMore' has the 'active' class */
-.readMore.active .bar:nth-child(1) {
+.readMore.active .bar:first-child {
   transform: rotate(45deg);
   position: absolute;
 }
@@ -105,7 +105,7 @@ excerpt {
   /* Hide the middle bar */
 }
 
-.readMore.active .bar:nth-child(4) {
+.readMore.active .bar:last-child {
   transform: rotate(-45deg);
   position: absolute;
 }
@@ -136,6 +136,17 @@ excerpt {
   object-fit: cover;
 }
 
+/* Make the hover effect visible for debugging */
+#enviroment>span:hover,
+#science>span:hover {
+  background-color: var(--text-color);
+}
+
+#enviroment:hover~a #page-category,
+#science:hover~a #page-category {
+  background-color: green;
+}
+
 .detail {
   padding: 1rem;
 }
@@ -153,8 +164,8 @@ excerpt {
   gap: 1rem;
 }
 
-.description-text > div > div > a,
-.description > div > div > div > a {
+.description-text>div>div>a,
+.description>div>div>div>a {
   color: var(--text-color);
 }
 
@@ -170,6 +181,18 @@ excerpt {
   display: flex;
   flex-direction: row;
   /* gap: 2rem; */
+}
+
+.row>div>i[class*=bi-facebook] {
+  color: green;
+}
+
+.row>div>i[class*=bi-twitter] {
+  color: red;
+}
+
+.row>div>i[class*=bi-instagram] {
+  color: purple
 }
 
 .tag-row .row {
@@ -334,6 +357,13 @@ footer p {
   margin-top: 1rem;
   width: 50px;
 }
+
+/* lucy */
+#m-share {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 
 /* ---------Siyuan-------------- */
 
@@ -573,6 +603,7 @@ h2 {
     color: var(--secondary-color);
   }
 }
+
 /* -----------Header ends here------------*/
 @media (min-width: 1024px) {
   body {
