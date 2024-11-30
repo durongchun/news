@@ -140,7 +140,6 @@ article:hover {
 #enviroment>span:hover,
 #science>span:hover {
   background-color: var(--text-color);
-
 }
 
 #enviroment:hover~a #page-category,
@@ -184,15 +183,15 @@ article:hover {
   /* gap: 2rem; */
 }
 
-.tag-row .row>div>i[class*=bi-facebook] {
+.row>div>i[class*=bi-facebook] {
   color: green;
 }
 
-.tag-row .row>div>i[class*=bi-twitter] {
+.row>div>i[class*=bi-twitter] {
   color: red;
 }
 
-.tag-row .row>div>i[class*=bi-instagram] {
+.row>div>i[class*=bi-instagram] {
   color: purple
 }
 
@@ -358,6 +357,13 @@ footer p {
   margin-top: 1rem;
   width: 50px;
 }
+
+/* lucy */
+#m-share {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 
 /* ---------Siyuan-------------- */
 
