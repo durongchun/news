@@ -44,7 +44,7 @@ article:hover {
   cursor: pointer;
 }
 
-excerpt {
+.j-title+.p-excerpt {
   font-size: var(--font-size-large);
 }
 
@@ -136,6 +136,18 @@ excerpt {
   object-fit: cover;
 }
 
+/* Make the hover effect visible for debugging */
+#enviroment>span:hover,
+#science>span:hover {
+  background-color: var(--text-color);
+
+}
+
+#enviroment:hover~a #page-category,
+#science:hover~a #page-category {
+  background-color: green;
+}
+
 .detail {
   padding: 1rem;
 }
@@ -153,8 +165,8 @@ excerpt {
   gap: 1rem;
 }
 
-.description-text > div > div > a,
-.description > div > div > div > a {
+.description-text>div>div>a,
+.description>div>div>div>a {
   color: var(--text-color);
 }
 
@@ -573,6 +585,7 @@ h2 {
     color: var(--secondary-color);
   }
 }
+
 /* -----------Header ends here------------*/
 @media (min-width: 1024px) {
   body {
