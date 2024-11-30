@@ -19,8 +19,8 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 0.6fr 10.5fr 3fr;
   font-family: var(--font-family);
 }
 
@@ -44,7 +44,300 @@ article:hover {
   cursor: pointer;
 }
 
----------Siyuan--------------
+excerpt {
+  font-size: var(--font-size-large);
+}
+
+.bottom-articles {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 2rem;
+  gap: 1rem;
+}
+
+.bottom-articles article img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bottom-articles article {
+  display: grid;
+  grid-template-rows: 2fr, 1.5;
+}
+
+.bottom-articles article text {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.read-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.readMore {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 1.5px;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+  /* Add transition for smooth animation */
+}
+
+/* When 'readMore' has the 'active' class */
+.readMore.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.readMore.active .bar:nth-child(2),
+.readMore.active .bar:nth-child(3) {
+  opacity: 0;
+  /* Hide the middle bar */
+}
+
+.readMore.active .bar:nth-child(4) {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+/* Transition for the bars when no active state */
+.readMore .bar {
+  transition: all 0.3s ease-in-out;
+}
+
+.excerpt {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1.273;
+}
+
+.category,
+.read-bar {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+
+.bottom-articles article img {
+  width: 100%;
+  height: 22.7rem;
+  object-fit: cover;
+}
+
+.detail {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  width: 80%;
+  align-items: center;
+  padding-left: 20%;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.description-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.description-text>div>div>a,
+.description>div>div>div>a {
+  color: var(--text-color);
+}
+
+.category:hover {
+  background-color: var(--text-color);
+}
+
+.description img {
+  object-fit: cover;
+}
+
+.tag-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.other-image {
+  width: 50%;
+  height: 25rem;
+}
+
+/* Initially, the container is fully visible and positioned normally */
+.container {
+  opacity: 1;
+  transform: translateY(0);
+  /* Starts at normal position */
+  transition: opacity 4s ease, transform 2s ease;
+  /* Animate both opacity and sliding */
+}
+
+/* When we want to slide it up and fade it out */
+.container.fading {
+  opacity: 0;
+  /* Fully fade out */
+  transform: translateY(-600px);
+  /* Slide up by 50px, adjust this value as needed */
+}
+
+.page-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+/* Define fire-like animation */
+@keyframes fireDisappear {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1) rotate(2deg);
+    filter: blur(2px) brightness(1.5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-3deg);
+    filter: blur(5px) brightness(2);
+  }
+}
+
+/* Initially, no animation is applied */
+.content {
+  transition: all 0.5s ease;
+}
+
+/* Add the animation when the class is applied */
+.fire-effect {
+  animation: fireDisappear 2s forwards;
+}
+
+
+
+/* -----------Tatiana------------- */
+.main-article {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/phone.jpg');
+  background-size: cover;
+  padding: 1rem;
+  justify-content: flex-end;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.main-article-image {
+  display: none;
+}
+
+.tip {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.category-main {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0;
+}
+
+.author-main {
+  color: rgb(250, 208, 72);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0;
+}
+
+/* footer {
+  display: flex;
+  flex-direction: row;
+  
+} */
+
+footer p {
+  color: rgb(188, 184, 184);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgb(141, 141, 141);
+  border-top: 1px solid rgb(141, 141, 141);
+  background-color: black;
+  /* margin-top: 61rem; */
+}
+
+.footer__title,
+.footer__person-name {
+  color: #f0ad4e;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  background-color: rgb(60, 60, 60);
+}
+
+.copyright-text {
+  color: rgb(223, 221, 221);
+  padding-right: 0.2rem;
+}
+
+.footer-logo {
+  padding: 0;
+  margin-top: 1rem;
+  width: 50px;
+}
+
+
+/* ---------Siyuan-------------- */
 
 /* Header style */
 header {
@@ -232,25 +525,7 @@ h2 {
   display: none;
 }
 
-/* Footer */
-footer {
-  height: 100px;
-  background-color: bisque;
-}
 
-/* -------Lucy--------------- */
-
-.bottom-articles {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  height: 2rem;
-}
-
-.bottom-articles article img {
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-}
 
 @media (min-width: 768px) {
   .btn-menu {
@@ -332,7 +607,7 @@ footer {
   }
 
   /* -----------Tatiana------------- */
-  .main-article {
+  /* .main-article {
     display: flex;
     flex-direction: column;
     background-image: url('../images/phone.jpg');
@@ -376,17 +651,17 @@ footer {
     line-height: 1.5;
     padding-bottom: 0.2rem;
     margin-bottom: 0;
-  }
+  }*/
 
-  footer {
+  /* footer {
     display: flex;
     flex-direction: column;
-    /* background-color: black; */
-  }
 
-  footer p {
+  } */
+
+  /* footer p {
     color: rgb(188, 184, 184);
-  }
+  } */
 
   .footer__container {
     display: flex;
@@ -397,6 +672,7 @@ footer {
     border-bottom: 1px solid rgb(141, 141, 141);
     border-top: 1px solid rgb(141, 141, 141);
     background-color: black;
+    margin: 0;
   }
 
   .footer__title,
@@ -432,67 +708,13 @@ footer {
     gap: 1rem;
   }
 
-  .bottom-articles article {
-    display: grid;
-    grid-template-rows: 2fr, 1.5;
-  }
-
-  .bottom-articles article text {
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-  }
-
-  .read-bar {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 2rem;
-  }
-
-  .readMore {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    border: 0;
-    position: relative;
-    cursor: pointer;
-    /* indicate it's clickable */
-  }
-
   .bar {
     display: block;
     width: 30px;
-    height: 2px;
+    height: 1.5px;
     background-color: #333;
     transition: all 0.3s ease-in-out;
     /* Add transition for smooth animation */
-  }
-
-  /* When 'readMore' has the 'active' class */
-  .readMore.active .bar:nth-child(1) {
-    transform: rotate(45deg);
-    position: absolute;
-  }
-
-  .readMore.active .bar:nth-child(2),
-  .readMore.active .bar:nth-child(3) {
-    opacity: 0;
-    /* Hide the middle bar */
-  }
-
-  .readMore.active .bar:nth-child(4) {
-    transform: rotate(-45deg);
-    position: absolute;
-  }
-
-  /* Transition for the bars when no active state */
-  .readMore .bar {
-    transition: all 0.3s ease-in-out;
-  }
-
-  .excerpt {
-    font-size: 22px;
-    font-weight: 400;
-    letter-spacing: 0.1px;
-    line-height: 1.273;
   }
 
   .category,
@@ -509,87 +731,4 @@ footer {
     object-fit: cover;
   }
 
-  .detail {
-    display: grid;
-    grid-template-rows: 1fr 10fr;
-    width: 80%;
-    align-items: end;
-    padding-left: 20%;
-  }
-
-  .description {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    flex-wrap: wrap;
-    gap: 3rem;
-  }
-
-  .description-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .description img {
-    object-fit: cover;
-  }
-
-  .other-image {
-    width: 50%;
-    height: 25rem;
-  }
-
-  /* Initially, the container is fully visible and positioned normally */
-  .container {
-    opacity: 1;
-    transform: translateY(0);
-    /* Starts at normal position */
-    transition: opacity 4s ease, transform 2s ease;
-    /* Animate both opacity and sliding */
-  }
-
-  /* When we want to slide it up and fade it out */
-  .container.fading {
-    opacity: 0;
-    /* Fully fade out */
-    transform: translateY(-600px);
-    /* Slide up by 50px, adjust this value as needed */
-  }
-
-  .page-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    cursor: pointer;
-  }
-
-  /* Define fire-like animation */
-  @keyframes fireDisappear {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    50% {
-      opacity: 0.5;
-      transform: scale(1.1) rotate(2deg);
-      filter: blur(2px) brightness(1.5);
-    }
-
-    100% {
-      opacity: 0;
-      transform: scale(0.8) rotate(-3deg);
-      filter: blur(5px) brightness(2);
-    }
-  }
-
-  /* Initially, no animation is applied */
-  .content {
-    transition: all 0.5s ease;
-  }
-
-  /* Add the animation when the class is applied */
-  .fire-effect {
-    animation: fireDisappear 2s forwards;
-  }
 }
