@@ -20,6 +20,7 @@ for (let i = 0; i < readMores.length; i++) {
     setTimeout(() => {
       mainContent.classList.add("d-none"); // Fully hide after animation
       document.body.style.display = "block";
+      document.querySelector(".details").classList.remove("d-none");
       document
         .querySelector(".description-text .pt-5")
         .classList.toggle("pt-5");
