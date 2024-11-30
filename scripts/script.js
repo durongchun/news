@@ -22,8 +22,8 @@ for (let i = 0; i < readMores.length; i++) {
       document.body.style.display = "block";
       document
         .querySelector(".description-text .pt-5")
-        .classList.remove("pt-5");
-      document.querySelector(".description .pt-5").classList.remove("pt-5");
+        ?.classList.toggle("pt-5");
+      document.querySelector(".description .pt-5")?.classList.remove("pt-5");
     }, 2000); // Ensure this matches or is slightly longer than the slide/fade duration
 
     // Handle specific detail content based on the button clicked

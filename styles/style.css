@@ -513,6 +513,12 @@ h2 {
 
 
 @media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-rows: 0.6fr 10.2fr 3fr;
+    font-family: var(--font-family);
+  }
+
   .btn-menu {
     display: none;
   }
