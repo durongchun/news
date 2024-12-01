@@ -338,7 +338,7 @@ footer p {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 0.8rem;
+  gap: 1rem;
   padding: 0.5rem;
   font-size: 0.9rem;
   background-color: rgb(60, 60, 60);
@@ -347,7 +347,6 @@ footer p {
 .copyright-text {
   color: rgb(223, 221, 221);
   padding-right: 0.2rem;
-  text-wrap: nowrap;
 }
 
 .footer-logo {
