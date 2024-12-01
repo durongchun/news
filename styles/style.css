@@ -180,7 +180,6 @@ article:hover {
 .tag-row .tag {
   display: flex;
   flex-direction: row;
-  /* gap: 2rem; */
 }
 
 .row>div>i[class*="bi-facebook"] {
@@ -230,6 +229,33 @@ article:hover {
   cursor: pointer;
 }
 
+/* Initially, no animation is applied */
+.content {
+  transition: all 0.5s ease;
+}
+
+/* Add the animation when the class is applied */
+.fire-effect {
+  animation: fireDisappear 2s forwards;
+}
+
+/* Initial image style */
+.description img {
+  transition: transform 2s ease, opacity 2s ease;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 4s steps(40) 1s forwards;
+}
+
+
 /* Define fire-like animation */
 @keyframes fireDisappear {
   0% {
@@ -248,23 +274,6 @@ article:hover {
     transform: scale(0.8) rotate(-3deg);
     filter: blur(5px) brightness(2);
   }
-}
-
-/* Initially, no animation is applied */
-.content {
-  transition: all 0.5s ease;
-}
-
-/* Add the animation when the class is applied */
-.fire-effect {
-  animation: fireDisappear 2s forwards;
-}
-
-/* Initial image style */
-.description img {
-  transition: transform 2s ease, opacity 2s ease;
-  object-fit: cover;
-  cursor: pointer;
 }
 
 @keyframes shakeEffect {
@@ -311,15 +320,6 @@ article:hover {
   100% {
     width: 100%;
   }
-}
-
-.typewriter {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid black;
-  width: 0;
-  animation: typing 4s steps(40) 1s forwards;
 }
 
 /* -----------Tatiana------------- */
@@ -730,8 +730,6 @@ article {
     flex-direction: row;
   }
 
-  /* Nav bar end here */
-
   /* Right side style */
   .right-side {
     display: grid;
@@ -740,62 +738,6 @@ article {
   }
 
   /* -----------Tatiana------------- */
-  /* .main-article {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../images/phone.jpg');
-    background-size: cover;
-    padding: 1rem;
-    justify-content: flex-end;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  }
-
-  .tip {
-    color: white;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .tags {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .category-main {
-    color: white;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 400;
-    letter-spacing: 3px;
-    line-height: 1.5;
-    padding-bottom: 0.2rem;
-    margin-bottom: 0;
-  }
-
-  .author-main {
-    color: rgb(250, 208, 72);
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding-bottom: 0.2rem;
-    margin-bottom: 0;
-  }*/
-
-  /* footer {
-    display: flex;
-    flex-direction: column;
-
-  } */
-
-  /* footer p {
-    color: rgb(188, 184, 184);
-  } */
-
   .footer__container {
     display: flex;
     flex-direction: row;
@@ -818,8 +760,6 @@ article {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    /* padding: 0.5rem;
-    padding-top: 0; */
     padding-left: 0.5rem;
     padding-right: 1rem;
     font-size: 0.9rem;
