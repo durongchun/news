@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (mainCategory && articleCategory) {
         const tempCategory = mainCategory.textContent;
         mainCategory.textContent = articleCategory.textContent;
-        articleCategory.textContent = tempCategory;
+        // articleCategory.textContent = tempCategory;
       }
 
       // Swap title
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const tempTitle = mainTitle.textContent;
       mainTitle.textContent = articleTitle.textContent;
-      articleTitle.textContent = tempTitle;
+      // articleTitle.textContent = tempTitle;
 
       // Swap author
       const mainAuthor = mainArticle.querySelector(".author-main");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const tempAuthor = mainAuthor.textContent;
       mainAuthor.textContent = articleAuthor.textContent;
-      articleAuthor.textContent = tempAuthor;
+      // articleAuthor.textContent = tempAuthor;
 
       // Swap tags
       const mainTagsContainer = mainArticle.querySelector(".tags");
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const tempTagsHTML = mainTagsContainer.innerHTML;
       mainTagsContainer.innerHTML = articleTagsContainer.innerHTML;
-      articleTagsContainer.innerHTML = tempTagsHTML;
+      // articleTagsContainer.innerHTML = tempTagsHTML;
     });
   });
 });
