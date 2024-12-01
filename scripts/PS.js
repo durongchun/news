@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       navList.style.display = "flex";
       navList.classList.add("slide-out");
       mainContent.style.marginRight = "160px";
+      window.scrollTo({ top: 0, behavior: "smooth" });
       document.body.style.overflow = "hidden"; // Lock scrolling
     }
   });
