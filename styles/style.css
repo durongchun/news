@@ -183,15 +183,15 @@ article:hover {
   /* gap: 2rem; */
 }
 
-.row > div > i[class*='bi-facebook'] {
+.row > div > i[class*="bi-facebook"] {
   color: green;
 }
 
-.row > div > i[class*='bi-twitter'] {
+.row > div > i[class*="bi-twitter"] {
   color: red;
 }
 
-.row > div > i[class*='bi-instagram'] {
+.row > div > i[class*="bi-instagram"] {
   color: purple;
 }
 
@@ -263,7 +263,7 @@ article:hover {
 .main-article {
   display: flex;
   flex-direction: column;
-  background-image: url('../images/phone.jpg');
+  background-image: url("../images/phone.jpg");
   background-size: cover;
   padding: 1rem;
   justify-content: flex-end;
@@ -312,12 +312,6 @@ a {
   margin-bottom: 0;
 }
 
-/* footer {
-  display: flex;
-  flex-direction: row;
-  
-} */
-
 footer p {
   color: rgb(188, 184, 184);
 }
@@ -331,7 +325,7 @@ footer p {
   border-bottom: 1px solid rgb(141, 141, 141);
   border-top: 1px solid rgb(141, 141, 141);
   background-color: black;
-  /* margin-top: 61rem; */
+  gap: 0.7rem;
 }
 
 .footer__title,
@@ -344,6 +338,7 @@ footer p {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 1rem;
   padding: 0.5rem;
   font-size: 0.9rem;
   background-color: rgb(60, 60, 60);
@@ -540,7 +535,7 @@ h2 {
 }
 
 .tag a::before {
-  content: '•';
+  content: "•";
   margin-right: 3px;
   color: var(--text-color);
 }
