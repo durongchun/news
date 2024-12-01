@@ -81,6 +81,9 @@ document
     this.style.animation = "none"; // Reset animation
     this.offsetHeight; // Trigger reflow (necessary for reapplying animation)
     this.style.animation = "shakeEffect 3s ease-in-out forwards"; // Reapply the animation
+    setTimeout(() => {
+      this.style.animation = "none"; // Clear animation after 1.5s
+    }, 3000); // Match the duration of the animation
   });
 
 document

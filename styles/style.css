@@ -260,10 +260,6 @@ article:hover {
   animation: fireDisappear 2s forwards;
 }
 
-.heartBeat {
-  animation: heartbeat 1.5s ease-in-out infinite;
-}
-
 /* Initial image style */
 .description img {
   transition: transform 2s ease, opacity 2s ease;
