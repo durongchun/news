@@ -586,8 +586,12 @@ h2 {
   text-transform: uppercase;
 }
 
+article {
+  gap: 0.5rem;
+}
+
 .tag {
-  display: flex;
+  display: none;
   flex-direction: row;
 }
 
@@ -713,6 +717,12 @@ h2 {
   #nav-bar li a:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+  }
+
+
+  .tag {
+    display: flex;
+    flex-direction: row;
   }
 
   /* Nav bar end here */
