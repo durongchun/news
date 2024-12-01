@@ -74,3 +74,27 @@ pageNavScien.addEventListener("click", function () {
     location.reload();
   }, 2000); // Adjust delay as needed (optional)
 });
+
+// document
+//   .querySelector(".description img")
+//   .addEventListener("click", function () {
+//     this.classList.add("broken"); // Apply the broken effect on click
+//   });
+
+document
+  .querySelector(".description img")
+  .addEventListener("click", function () {
+    this.classList.add("shake"); // Apply the broken effect on click
+    this.style.animation = "none"; // Reset animation
+    this.offsetHeight; // Trigger reflow (necessary for reapplying animation)
+    this.style.animation = "shakeEffect 3s ease-in-out forwards"; // Reapply the animation
+  });
+
+document
+  .querySelector(".row>div>i[class*=bi-facebook] ")
+  .addEventListener("click", function () {
+    this.classList.add("heartBeat");
+    this.style.animation = "none"; // Reset animation
+    this.offsetHeight; // Trigger reflow (necessary for reapplying animation)
+    this.style.animation = "heartbeat 1.5s ease-in-out infinite"; // Reapply the animation
+  });

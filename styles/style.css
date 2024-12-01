@@ -259,6 +259,68 @@ article:hover {
   animation: fireDisappear 2s forwards;
 }
 
+/* Initial image style */
+.description img {
+  transition: transform 2s ease, opacity 2s ease;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@keyframes shakeEffect {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-40px);
+  }
+
+  50% {
+    transform: translateX(40px);
+  }
+
+  75% {
+    transform: translateX(-40px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 4s steps(40) 1s forwards;
+}
+
 /* -----------Tatiana------------- */
 .main-article {
   display: flex;
