@@ -44,7 +44,7 @@ article:hover {
   cursor: pointer;
 }
 
-.j-title+.p-excerpt {
+.j-title + .p-excerpt {
   font-size: var(--font-size-large);
 }
 
@@ -137,13 +137,13 @@ article:hover {
 }
 
 /* Make the hover effect visible for debugging */
-#enviroment>span:hover,
-#science>span:hover {
+#enviroment > span:hover,
+#science > span:hover {
   background-color: var(--text-color);
 }
 
-#enviroment:hover~a #page-category,
-#science:hover~a #page-category {
+#enviroment:hover ~ a #page-category,
+#science:hover ~ a #page-category {
   background-color: green;
 }
 
@@ -164,8 +164,8 @@ article:hover {
   gap: 1rem;
 }
 
-.description-text>div>div>a,
-.description>div>div>div>a {
+.description-text > div > div > a,
+.description > div > div > div > a {
   color: var(--text-color);
 }
 
@@ -183,16 +183,16 @@ article:hover {
   /* gap: 2rem; */
 }
 
-.row>div>i[class*=bi-facebook] {
+.row > div > i[class*='bi-facebook'] {
   color: green;
 }
 
-.row>div>i[class*=bi-twitter] {
+.row > div > i[class*='bi-twitter'] {
   color: red;
 }
 
-.row>div>i[class*=bi-instagram] {
-  color: purple
+.row > div > i[class*='bi-instagram'] {
+  color: purple;
 }
 
 .tag-row .row {
@@ -366,12 +366,10 @@ footer p {
   grid-template-columns: repeat(3, 1fr);
 }
 
-
 /* ---------Siyuan-------------- */
 
 /* Header style */
 header {
-  /* height: 100px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -426,7 +424,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 200px;
+  width: 160px;
   display: none;
   position: fixed;
   top: 0;

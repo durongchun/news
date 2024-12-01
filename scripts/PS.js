@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Open menu
       navList.style.display = 'flex';
       navList.classList.add('slide-out');
-      mainContent.style.marginRight = '200px';
+      mainContent.style.marginRight = '160px';
     }
   });
 });
