@@ -20,7 +20,7 @@
 
 body {
   display: grid;
-  grid-template-rows: 0.45fr 10.8fr 3fr;
+  grid-template-rows: 0.45fr 10.4fr 3fr;
   font-family: var(--font-family);
 }
 
@@ -44,7 +44,7 @@ article:hover {
   cursor: pointer;
 }
 
-.j-title + .p-excerpt {
+.j-title+.p-excerpt {
   font-size: var(--font-size-large);
 }
 
@@ -137,13 +137,13 @@ article:hover {
 }
 
 /* Make the hover effect visible for debugging */
-#enviroment > span:hover,
-#science > span:hover {
+#enviroment>span:hover,
+#science>span:hover {
   background-color: var(--text-color);
 }
 
-#enviroment:hover ~ a #page-category,
-#science:hover ~ a #page-category {
+#enviroment:hover~a #page-category,
+#science:hover~a #page-category {
   background-color: green;
 }
 
@@ -164,8 +164,8 @@ article:hover {
   gap: 1rem;
 }
 
-.description-text > div > div > a,
-.description > div > div > div > a {
+.description-text>div>div>a,
+.description>div>div>div>a {
   color: var(--text-color);
 }
 
@@ -183,15 +183,16 @@ article:hover {
   /* gap: 2rem; */
 }
 
-.row > div > i[class*="bi-facebook"] {
+.row>div>i[class*="bi-facebook"] {
   color: green;
+  cursor: pointer;
 }
 
-.row > div > i[class*="bi-twitter"] {
+.row>div>i[class*="bi-twitter"] {
   color: red;
 }
 
-.row > div > i[class*="bi-instagram"] {
+.row>div>i[class*="bi-instagram"] {
   color: purple;
 }
 
@@ -257,6 +258,68 @@ article:hover {
 /* Add the animation when the class is applied */
 .fire-effect {
   animation: fireDisappear 2s forwards;
+}
+
+/* Initial image style */
+.description img {
+  transition: transform 2s ease, opacity 2s ease;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@keyframes shakeEffect {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-40px);
+  }
+
+  50% {
+    transform: translateX(40px);
+  }
+
+  75% {
+    transform: translateX(-40px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 4s steps(40) 1s forwards;
 }
 
 /* -----------Tatiana------------- */
@@ -336,10 +399,10 @@ footer p {
 .copyright {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 1rem;
-  padding: 0.5rem;
+  align-content: center;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 0.5rem 0.5rem 0rem 0rem;
   font-size: 0.9rem;
   background-color: rgb(60, 60, 60);
 }
@@ -351,7 +414,7 @@ footer p {
 
 .footer-logo {
   padding: 0;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   width: 50px;
 }
 
@@ -740,8 +803,12 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0.5rem;
+    /* padding: 0.5rem;
+    padding-top: 0; */
+    padding-left: 0.5rem;
+    padding-right: 1rem;
     font-size: 0.9rem;
+    height: 60px;
     background-color: rgb(60, 60, 60);
   }
 
