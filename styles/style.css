@@ -538,6 +538,7 @@ main {
 .left-list {
   display: flex;
   flex-direction: column;
+  gap: 0.6rem;
 }
 
 #list-title {
@@ -550,7 +551,7 @@ main {
   display: flex;
   flex-direction: row;
   height: 160px;
-  margin: 5px;
+  /* margin: 5px; */
   color: var(--secondary-color);
   transition: transform 0.3s ease-in-out;
   /* Smooth the transition*/
@@ -576,6 +577,7 @@ main {
   text-align: left;
   margin-left: 5px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 h2 {
