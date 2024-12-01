@@ -44,7 +44,7 @@ article:hover {
   cursor: pointer;
 }
 
-.j-title+.p-excerpt {
+.j-title + .p-excerpt {
   font-size: var(--font-size-large);
 }
 
@@ -137,13 +137,13 @@ article:hover {
 }
 
 /* Make the hover effect visible for debugging */
-#enviroment>span:hover,
-#science>span:hover {
+#enviroment > span:hover,
+#science > span:hover {
   background-color: var(--text-color);
 }
 
-#enviroment:hover~a #page-category,
-#science:hover~a #page-category {
+#enviroment:hover ~ a #page-category,
+#science:hover ~ a #page-category {
   background-color: green;
 }
 
@@ -164,8 +164,8 @@ article:hover {
   gap: 1rem;
 }
 
-.description-text>div>div>a,
-.description>div>div>div>a {
+.description-text > div > div > a,
+.description > div > div > div > a {
   color: var(--text-color);
 }
 
@@ -183,16 +183,16 @@ article:hover {
   /* gap: 2rem; */
 }
 
-.row>div>i[class*=bi-facebook] {
+.row > div > i[class*="bi-facebook"] {
   color: green;
 }
 
-.row>div>i[class*=bi-twitter] {
+.row > div > i[class*="bi-twitter"] {
   color: red;
 }
 
-.row>div>i[class*=bi-instagram] {
-  color: purple
+.row > div > i[class*="bi-instagram"] {
+  color: purple;
 }
 
 .tag-row .row {
@@ -263,7 +263,7 @@ article:hover {
 .main-article {
   display: flex;
   flex-direction: column;
-  background-image: url('../images/phone.jpg');
+  background-image: url("../images/phone.jpg");
   background-size: cover;
   padding: 1rem;
   justify-content: flex-end;
@@ -312,12 +312,6 @@ a {
   margin-bottom: 0;
 }
 
-/* footer {
-  display: flex;
-  flex-direction: row;
-  
-} */
-
 footer p {
   color: rgb(188, 184, 184);
 }
@@ -331,7 +325,7 @@ footer p {
   border-bottom: 1px solid rgb(141, 141, 141);
   border-top: 1px solid rgb(141, 141, 141);
   background-color: black;
-  /* margin-top: 61rem; */
+  gap: 0.7rem;
 }
 
 .footer__title,
@@ -344,6 +338,7 @@ footer p {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 0.8rem;
   padding: 0.5rem;
   font-size: 0.9rem;
   background-color: rgb(60, 60, 60);
@@ -352,6 +347,7 @@ footer p {
 .copyright-text {
   color: rgb(223, 221, 221);
   padding-right: 0.2rem;
+  text-wrap: nowrap;
 }
 
 .footer-logo {
@@ -365,7 +361,6 @@ footer p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
 
 /* ---------Siyuan-------------- */
 
@@ -542,7 +537,7 @@ h2 {
 }
 
 .tag a::before {
-  content: '•';
+  content: "•";
   margin-right: 3px;
   color: var(--text-color);
 }
